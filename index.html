@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Falx Benchmarks</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.0.0-beta.2"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-embed@5"></script>
+
+   <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  
+  <!-- Bootstrap Table -->
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
+  <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
+
+  <script src="benchmarks.js"></script>
+
+</head>
+
+<body>  
+
+  <div class="wrapper">
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+            <h3>Benchmarks</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="list-unstyled">
+                    <li> <a href="#" onclick="renderBenchmark(000)">000</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(001)">001</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(002)">002</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(003)">003</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(004)">004</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(005)">005</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(006)">006</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(007)">007</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(008)">008</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(009)">009</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(010)">010</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(011)">011</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(012)">012</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(013)">013</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(014)">014</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(015)">015</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(016)">016</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(017)">017</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(018)">018</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(019)">019</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(020)">020</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(021)">021</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(022)">022</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(023)">023</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(024)">024</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(025)">025</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(026)">026</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(027)">027</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(028)">028</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(029)">029</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(030)">030</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(031)">031</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(032)">032</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(033)">033</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(034)">034</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(035)">035</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(036)">036</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(037)">037</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(038)">038</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(039)">039</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(040)">040</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(041)">041</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(042)">042</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(043)">043</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(044)">044</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(045)">045</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(046)">046</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(047)">047</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(048)">048</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(049)">049</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(050)">050</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(051)">051</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(052)">052</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(053)">053</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(054)">054</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(055)">055</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(056)">056</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(057)">057</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(058)">058</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(059)">059</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(060)">060</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(061)">061</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(062)">062</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(063)">063</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(064)">064</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(065)">065</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(066)">066</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(067)">067</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(068)">068</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(069)">069</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(070)">070</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(071)">071</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(072)">072</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(073)">073</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(074)">074</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(075)">075</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(076)">076</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(077)">077</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(078)">078</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(079)">079</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(080)">080</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(081)">081</a></li>
+                    <li> <a href="#" onclick="renderBenchmark(082)">082</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content">
+      <h1>Benchmarks </h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h4>Input Data</h4>
+            <div>
+              <table id="input-data"></table>
+            </div>
+          </div>
+          <div class="col-sm">
+            <h4>Visual Sketch</h4>
+            <div id="example-trace-vis"></div>
+          </div>
+          <div class="col-sm">
+            <h4>Desired Visualization</h4>
+            <div id="full-vis"></div>
+          </div>
+        </div>
+      </div>
+
+  </div>   
+
+  <script>
+    renderBenchmark(000)
+
+    function renderBenchmark(id) {
+      //const id = 37;
+      console.log(benchmarks[id]);
+
+      // get vis spec
+      var spec = benchmarks[id]["vl_spec"];
+      var traceVisSpec = JSON.parse(JSON.stringify(spec));
+
+      // show input data
+      const columns = []
+      const keys = Object.keys(benchmarks[id]["input_data"][0]);
+      for (var k in keys) {
+        columns.push({field: keys[k], title: keys[k]});
+      }
+
+      $table = $('#input-data')
+      $table.bootstrapTable('destroy')
+      $table.bootstrapTable({
+        columns: columns,
+        data: benchmarks[id]["input_data"]
+      });
+      $table.bootstrapTable('refreshOptions', {
+        classes: "table-sm table-bordered table-hover" 
+      })
+
+      // prepare trace data that will be used in visualization
+      var traceVisData = [];
+      var containsX2 = false;
+      var containsY2 = false;
+
+      for (var k in benchmarks[id]["sample_trace"]) {
+        const trace = benchmarks[id]["sample_trace"][k];
+        var traceCopy = JSON.parse(JSON.stringify(trace["props"]));
+        traceCopy["layer_id"] = trace["type"];
+        traceVisData.push(traceCopy);
+        if ("x2" in traceCopy) {
+          containsX2 = true
+        }
+        if ("y2" in traceCopy) {
+          containsY2 = true
+        }
+      }
+
+      // visualize trace
+      if ("encoding" in traceVisSpec) {
+        for (var key in traceVisSpec["encoding"]) {
+          traceVisSpec["encoding"][key]["field"] = key; 
+        }
+        const mark =  (typeof traceVisSpec["mark"] === "string") ? traceVisSpec["mark"] : traceVisSpec["mark"]["type"];
+        console.log(mark);
+        if (mark == "bar") {
+          if (containsY2 && ! ("y2" in traceVisSpec["encoding"])) {
+            traceVisSpec["encoding"]["y2"] = {"field": "y2"};
+          }
+          if (containsX2 && ! ("x2" in traceVisSpec["encoding"])) {
+            traceVisSpec["encoding"]["x2"] = {"field": "x2"};
+          }
+        }
+      } else {
+        for (var k = 0; k < traceVisSpec["layer"].length; k ++) {
+          var layer = traceVisSpec["layer"][k];
+          for (var key in layer["encoding"]) {
+            layer["encoding"][key]["field"] = key;
+          }
+          layerMark =  (typeof layer["mark"] === "string") ? layer["mark"] : layer["mark"]["type"];
+          layer["transform"] = [{filter: "datum.layer_id == \"" + (layerMark == "circle" ? "point" : layerMark) + "\""}];
+          if (layerMark == "bar") {
+            if (containsY2 && ! ("y2" in layer["encoding"])) {
+              layer["encoding"]["y2"] = {"field": "y2"};
+            }
+            if (containsX2 && ! ("x2" in layer["encoding"])) {
+              layer["encoding"]["x2"] = {"field": "x2"};
+            }
+          }
+        }
+      }
+
+      traceVisSpec["data"] = {"values": traceVisData};
+      
+      vegaEmbed("#example-trace-vis", traceVisSpec);
+
+      // visualize full vis
+      spec["data"] = {"values": benchmarks[id]["output_data"]};
+
+      vegaEmbed("#full-vis", spec);
+        //// result.view provides access to the Vega View API
+        //.then(result => console.log(result))
+        //.catch(console.warn);
+    }
+    
+  </script>
+</body>
