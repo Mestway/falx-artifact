@@ -184,8 +184,6 @@
       var containsX2 = false;
       var containsY2 = false;
 
-      console.log(benchmarks[id]["sample_trace"])
-
       for (var k in benchmarks[id]["sample_trace"]) {
         const trace = benchmarks[id]["sample_trace"][k];
         var traceCopy = JSON.parse(JSON.stringify(trace["props"]));
@@ -210,8 +208,12 @@
 
         for (var key in traceVisSpec["encoding"]) {
 
-          if (key == "x2" || key == "y2") continue;
-
+          if (key == "x2" || key == "y2") {
+            traceVisSpec["encoding"][key]["field"] = key; 
+            continue;
+          }
+      
+          // infer domain of the field
           const originalField = traceVisSpec["encoding"][key]["field"];
           var domain = benchmarks[id]["output_data"].map(d => d[originalField])
           if (key == "x" && "x2" in traceVisSpec["encoding"]) {
@@ -222,8 +224,7 @@
           }
 
           const encodingType =  traceVisSpec["encoding"][key]["type"];
-          console.log(originalField);
-          console.log(encodingType);
+
           if (encodingType == "nominal" || encodingType == "ordinal") {
             domain.sort();
             traceVisSpec["encoding"][key]["scale"] = {"domain": [...new Set(domain)]}; 
@@ -233,6 +234,7 @@
             const minVal = Math.min(...domain);
             traceVisSpec["encoding"][key]["scale"] = {"domain": [Math.min(0, minVal), maxVal]}; 
           }
+
           traceVisSpec["encoding"][key]["field"] = key; 
         }
         
@@ -245,13 +247,55 @@
           }
         }
       } else {
+
+        var containsStackedChart = false
+        
         for (var k = 0; k < traceVisSpec["layer"].length; k ++) {
           var layer = traceVisSpec["layer"][k];
+          const mark =  (typeof layer["mark"] === "string") ? layer["mark"] : layer["mark"]["type"];
+          if ((mark == "bar" || mark == "area") && "color" in layer["encoding"]) {
+            containsStackedChart = true
+          }
+        }
+
+        for (var k = 0; k < traceVisSpec["layer"].length; k ++) {
+          var layer = traceVisSpec["layer"][k];
+
           for (var key in layer["encoding"]) {
+
+            if (key == "x2" || key == "y2") {
+              layer["encoding"][key]["field"] = key; 
+              continue;
+            }
+
+            // infer domain of the field
+            const originalField = layer["encoding"][key]["field"];
+            var domain = benchmarks[id]["output_data"].map(d => d[originalField])
+            if (key == "x" && "x2" in layer["encoding"]) {
+              domain = domain.concat(benchmarks[id]["output_data"].map(d => d[layer["encoding"]["x2"]["field"]]));
+            }
+            if (key == "y" && "y2" in layer["encoding"]) {
+              domain = domain.concat(benchmarks[id]["output_data"].map(d => d[layer["encoding"]["y2"]["field"]]));
+            }
+
+            const encodingType =  layer["encoding"][key]["type"];
+
+            if (encodingType == "nominal" || encodingType == "ordinal") {
+              domain.sort();
+              layer["encoding"][key]["scale"] = {"domain": [...new Set(domain)]}; 
+            }
+            if (encodingType == "quantitative" && !containsStackedChart) {
+              const maxVal = Math.max(...domain);
+              const minVal = Math.min(...domain);
+              layer["encoding"][key]["scale"] = {"domain": [Math.min(0, minVal), maxVal]}; 
+            }
+
             layer["encoding"][key]["field"] = key;
           }
+
           layerMark =  (typeof layer["mark"] === "string") ? layer["mark"] : layer["mark"]["type"];
           layer["transform"] = [{filter: "datum.layer_id == \"" + (layerMark == "circle" ? "point" : layerMark) + "\""}];
+
           if (layerMark == "bar") {
             if (containsY2 && ! ("y2" in layer["encoding"])) {
               layer["encoding"]["y2"] = {"field": "y2"};
@@ -264,6 +308,8 @@
       }
 
       traceVisSpec["data"] = {"values": traceVisData};
+
+      console.log(JSON.stringify(traceVisSpec))
       
       vegaEmbed("#example-trace-vis", traceVisSpec);
 
