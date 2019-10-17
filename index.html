@@ -134,13 +134,22 @@
     <div id="content">
       <div id="front-page">
         <h1>Automated Visualization (AutoVis) Benchmarks</h1>
-        <p>In AutoVis benchmarks, each visual sketch comes with an input data. <span style="font-weight: bold">Given the input data and the visual sketch, the goal is to create a visualization over the input table such that all visual traces in the sketch is contained by the output visualization.</span> 
+        <p>In AutoVis benchmarks, each visual sketch comes with an input data. <span style="font-weight: bold">Given the <span style="text-decoration: underline;">input data</span> and the <span style="text-decoration: underline;">visual sketch</span>, the goal is to create a <span style="text-decoration: underline;">visualization of the input data</span> such that all visual traces in the sketch are contained by the output visualization.</span> 
 
         <p>The dataset contains 83 benchmarks. Visual traces are described in the following format:</p>
         <code style="font-size:16px;">trace_type(...,attr=value,...)</code>
-        <p>where <code>trace_type</code> is one of <code>bar</code>, <code>line</code>, <code>point</code>, <code>area</code>, and <code>attr</code> is one of <code>x</code>, <code>x2</code>, <code>y</code>, <code>y2</code>, <code>color</code>, <code>size</code>, <code>shape</code>, <code>column</code>, <code>row</code>, <code>width</code>, and <code>x_top_left</code>, <code>y_top_left</code>, <code>x_top_right</code>, <code>y_bot_right</code>, <code>x_bot_left</code>, <code>y_bot_left</code>, <code>x_bot_right</code>, <code>y_bot_right</code> (for <code>area</code> types). Values in a visual trace can be a string, a number, a date, or a bool value.</p>
+        <p>The grammar of traces is shown below, where <code>trace_type</code> is one of <code>bar</code>, <code>line</code>, <code>point</code>, <code>area</code>, and <code>attr</code> is one of <code>x</code>, <code>x2</code>, <code>y</code>, <code>y2</code>, <code>color</code>, <code>size</code>, <code>shape</code>, <code>column</code>, <code>row</code>, <code>width</code>, and <code>x_top_left</code>, <code>y_top_left</code>, <code>x_top_right</code>, <code>y_bot_right</code>, <code>x_bot_left</code>, <code>y_bot_left</code>, <code>x_bot_right</code>, <code>y_bot_right</code> (for <code>area</code> types). Values in a visual trace can be a string, a number, a date, or a bool value.</p>
 
-        <p>Target visualizations include bar charts, line charts, scatter plots, area charts, stacked bar (area) charts, multi-layered charts, and facted (multi-vew) charts. Target visualizations and visual sketches are rendered using <a href='https://vega.github.io/vega-lite/'>Vega-Lite</a> with the help of <a href="https://github.com/vega/vega-embed">Vega-Embed</a> library.</p>
+        <p style="margin: auto; width: inherit;"><pre style="display: inline-block; text-align: left;">
+     trace  :=  trace_type(...,attr=value,...)
+trace_type  :=  bar, line, point, area
+      attr  :=  x, x2, y, y2, color, size, shape, column, row, width, 
+             |  x_top_lefty_top_left, x_top_right, y_bot_right, 
+             |  x_bot_left, y_bot_left, x_bot_right, y_bot_right
+     value  :=  string, number, date, bool
+</pre></p>
+
+        <p>Target visualizations include bar charts, line charts, scatter plots, area charts, stacked bar (area) charts, multi-layered charts, and facted (multi-vew) charts. Target visualizations and visual sketches are rendered using <a href='https://vega.github.io/vega-lite/'>Vega-Lite</a> with the help of <a href="https://github.com/vega/vega-embed">Vega-Embed</a> library. Besides providing rendered visualizations, we also provide visual traces (for both visual sketch and the target visualization) in textual form for reference.</p> 
       </div>
       <div id="benchmark-page">
         <h1 id="benchmark-header"> </h1>
