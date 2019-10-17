@@ -6,6 +6,16 @@
     DEMO STYLE
 */
 
+.trace-container {
+    margin-bottom: 50px;
+}
+
+#input-table table {
+    max-width: 100%;
+    min-width: 600px;
+    width: auto;
+}
+
 .col-sm {
 	margin-bottom: 50px;
 }
@@ -17,6 +27,33 @@
     transition: all 0.3s;
     text-align: center;
     overflow: auto;
+}
+
+#example-trace-text .tr-element {
+    display: block;
+}
+
+#full-trace-text .tr-element {
+    display: inline-block;
+}
+ 
+#example-trace-vis {
+    width: 100%;
+    overflow: auto;
+}
+
+#full-vis {
+    width: 100%;
+    overflow: auto;
+}
+
+span.key {
+    font-size: smaller;
+    font-style: italic;
+    color: grey;
+}
+span.value {
+    text-decoration: underline;
 }
 
 /*
