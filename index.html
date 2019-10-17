@@ -43,7 +43,7 @@
     <!-- Sidebar -->
     <nav id="sidebar">
       <ul>
-        <li> <a href="#" onclick="renderBenchmark('000')">000</a></li>
+        <li> <a href="#" onclick="renderHome()">Home</a></li>
         <li> <a href="#" onclick="renderBenchmark('001')">001</a></li>
         <li> <a href="#" onclick="renderBenchmark('002')">002</a></li>
         <li> <a href="#" onclick="renderBenchmark('003')">003</a></li>
@@ -126,46 +126,65 @@
         <li> <a href="#" onclick="renderBenchmark('080')">080</a></li>
         <li> <a href="#" onclick="renderBenchmark('081')">081</a></li>
         <li> <a href="#" onclick="renderBenchmark('082')">082</a></li>
+        <li> <a href="#" onclick="renderBenchmark('083')">083</a></li>
       </ul>
     </nav>
 
     <!-- Page Content -->
     <div id="content">
-      <h1 id="benchmark-header" class="display-4"> </h1>
-      <div class="container">
-        <div>
-          <h4>Input Data</h4>
-          <div id="input-table">
-            <table id="input-data" data-page-size="15" data-toggle="table" 
-              data-pagination="true" data-pagination-loop="false"
-              data-pagination-h-align="left" data-pagination-detail-h-align="right"
-              class="table-sm table-bordered table-hover table-striped"></table>
+      <div id="front-page">
+        <h1>Automated Visualization (AutoVis) Benchmarks</h1>
+        <p>In AutoVis benchmarks, each visual sketch comes with an input data. <span style="font-weight: bold">Given the input data and the visual sketch, the goal is to create a visualization over the input table such that all visual traces in the sketch is contained by the output visualization.</span> 
+
+        <p>The dataset contains 83 benchmarks. Visual traces are described in the following format:</p>
+        <code style="font-size:16px;">trace_type(...,attr=value,...)</code>
+        <p>where <code>trace_type</code> is one of <code>bar</code>, <code>line</code>, <code>point</code>, <code>area</code>, and <code>attr</code> is one of <code>x</code>, <code>x2</code>, <code>y</code>, <code>y2</code>, <code>color</code>, <code>size</code>, <code>shape</code>, <code>column</code>, <code>row</code>, <code>width</code>, and <code>x_top_left</code>, <code>y_top_left</code>, <code>x_top_right</code>, <code>y_bot_right</code>, <code>x_bot_left</code>, <code>y_bot_left</code>, <code>x_bot_right</code>, <code>y_bot_right</code> (for <code>area</code> types). Values in a visual trace can be a string, a number, a date, or a bool value.</p>
+
+        <p>Target visualizations include bar charts, line charts, scatter plots, area charts, stacked bar (area) charts, multi-layered charts, and facted (multi-vew) charts. Target visualizations and visual sketches are rendered using <a href='https://vega.github.io/vega-lite/'>Vega-Lite</a> with the help of <a href="https://github.com/vega/vega-embed">Vega-Embed</a> library.</p>
+      </div>
+      <div id="benchmark-page">
+        <h1 id="benchmark-header"> </h1>
+        <div class="container">
+          <div>
+            <h4>Input Data</h4>
+            <div id="input-table">
+              <table id="input-data" data-page-size="15" data-toggle="table" 
+                data-pagination="true" data-pagination-loop="false"
+                data-pagination-h-align="left" data-pagination-detail-h-align="right"
+                class="table-sm table-bordered table-hover table-striped"></table>
+            </div>
+          </div>
+          <h4>Visual Sketch</h4>
+          <div class="trace-container">
+            <div id="example-trace-vis"></div>
+            <div id="example-trace-text"></div>
+          </div>
+          <h4>Target Visualization</h4>
+          <div class="trace-container">
+            <div id="full-vis"></div>
+            <div id="full-trace-text"></div>
           </div>
         </div>
-        <h4>Visual Sketch</h4>
-        <div class="trace-container">
-          <div id="example-trace-vis"></div>
-          <div id="example-trace-text"></div>
-        </div>
-        <h4>Target Visualization</h4>
-        <div class="trace-container">
-          <div id="full-vis"></div>
-          <div id="full-trace-text"></div>
-        </div>
       </div>
-
-  </div>   
+    </div>
+  </div>
 
   <script>
-    renderBenchmark("000")
+    renderHome();
+
+    function renderHome() {
+      $("#front-page").css("display", "block");
+      $("#benchmark-page").css("display", "none");
+    }
 
     function renderBenchmark(idStr) {
 
-      const id = parseInt(idStr);
+      $("#front-page").css("display", "none");
+      $("#benchmark-page").css("display", "block");
 
-      console.log(id);
+      const id = parseInt(idStr) - 1;
 
-      $("#benchmark-header").text("Benchmark " + id);
+      $("#benchmark-header").text("Benchmark " + (id + 1));
 
       // get vis spec
       var spec = benchmarks[id]["vl_spec"];
@@ -359,10 +378,14 @@
         return spanList;
       }
       
-      console.log(JSON.stringify(traceVisSpec));
+      //console.log(JSON.stringify(traceVisSpec));
 
       $("#example-trace-vis").empty()
-      vegaEmbed("#example-trace-vis", traceVisSpec);
+      vegaEmbed("#example-trace-vis", traceVisSpec)
+        .catch((err) => {
+          $("#example-trace-vis").append("<span style='color:grey;margin-bottom:15px;'>[There is an issue rendering the visual trace due to VegaEmbed error. Visual trace will be displayed in textual form only.]<span>");
+          console.warn(err);
+        });
       $("#example-trace-text").empty();
       $("#example-trace-text").append(processTrace(benchmarks[id]["raw_sample_trace"], false));
 
@@ -370,10 +393,14 @@
       // visualize full vis
       spec["data"] = {"values": benchmarks[id]["output_data"]};
 
-      console.log(JSON.stringify(spec));
+      //console.log(JSON.stringify(spec));
 
       $("#full-vis").empty()
-      vegaEmbed("#full-vis", spec);
+      vegaEmbed("#full-vis", spec)
+        .catch(err => {
+          $("#full-vis").append("<span style='color:grey;margin-bottom:15px;'>[There is an issue rendering the visual trace due to VegaEmbed error. Visual trace will be displayed in textual form only.]<span>");
+          console.warn(err);
+        });
         // result.view provides access to the Vega View API
         // .then(result => console.log(result.vgSpec.scales))
         // .catch(console.warn);
