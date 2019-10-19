@@ -1,0 +1,282 @@
+{
+  "input_data": [
+    {
+      "Category": "HOME APPLIANCES",
+      "<-10%": 194,
+      "<0%": 139,
+      ">10%": 181,
+      ">=0%": 131,
+      "TOTAL": 645
+    },
+    {
+      "Category": "COMPUTERS",
+      "<-10%": 174,
+      "<0%": 118,
+      ">10%": 173,
+      ">=0%": 103,
+      "TOTAL": 568
+    },
+    {
+      "Category": "CAMERAS & CAMCORDERS",
+      "<-10%": 110,
+      "<0%": 94,
+      ">10%": 83,
+      ">=0%": 68,
+      "TOTAL": 355
+    },
+    {
+      "Category": "CELL PHONES",
+      "<-10%": 80,
+      "<0%": 63,
+      ">10%": 69,
+      ">=0%": 53,
+      "TOTAL": 265
+    },
+    {
+      "Category": "TV & VIDEO",
+      "<-10%": 62,
+      "<0%": 45,
+      ">10%": 56,
+      ">=0%": 42,
+      "TOTAL": 205
+    },
+    {
+      "Category": "GAMES & TOYS",
+      "<-10%": 65,
+      "<0%": 34,
+      ">10%": 42,
+      ">=0%": 25,
+      "TOTAL": 166
+    },
+    {
+      "Category": "AUDIO",
+      "<-10%": 34,
+      "<0%": 19,
+      ">10%": 34,
+      ">=0%": 13,
+      "TOTAL": 100
+    },
+    {
+      "Category": "MUSIC, MOVIES & AUDIO BOOKS",
+      "<-10%": 15,
+      "<0%": 26,
+      ">10%": 29,
+      ">=0%": 20,
+      "TOTAL": 90
+    }
+  ],
+  "output_data": [
+    {
+      "TOTAL": 645,
+      "Category": "HOME APPLIANCES",
+      "variable": "<-10%",
+      "value": 451
+    },
+    {
+      "TOTAL": 568,
+      "Category": "COMPUTERS",
+      "variable": "<-10%",
+      "value": 394
+    },
+    {
+      "TOTAL": 355,
+      "Category": "CAMERAS & CAMCORDERS",
+      "variable": "<-10%",
+      "value": 245
+    },
+    {
+      "TOTAL": 265,
+      "Category": "CELL PHONES",
+      "variable": "<-10%",
+      "value": 185
+    },
+    {
+      "TOTAL": 205,
+      "Category": "TV & VIDEO",
+      "variable": "<-10%",
+      "value": 143
+    },
+    {
+      "TOTAL": 166,
+      "Category": "GAMES & TOYS",
+      "variable": "<-10%",
+      "value": 101
+    },
+    {
+      "TOTAL": 100,
+      "Category": "AUDIO",
+      "variable": "<-10%",
+      "value": 66
+    },
+    {
+      "TOTAL": 90,
+      "Category": "MUSIC, MOVIES & AUDIO BOOKS",
+      "variable": "<-10%",
+      "value": 75
+    },
+    {
+      "TOTAL": 645,
+      "Category": "HOME APPLIANCES",
+      "variable": "<0%",
+      "value": 506
+    },
+    {
+      "TOTAL": 568,
+      "Category": "COMPUTERS",
+      "variable": "<0%",
+      "value": 450
+    },
+    {
+      "TOTAL": 355,
+      "Category": "CAMERAS & CAMCORDERS",
+      "variable": "<0%",
+      "value": 261
+    },
+    {
+      "TOTAL": 265,
+      "Category": "CELL PHONES",
+      "variable": "<0%",
+      "value": 202
+    },
+    {
+      "TOTAL": 205,
+      "Category": "TV & VIDEO",
+      "variable": "<0%",
+      "value": 160
+    },
+    {
+      "TOTAL": 166,
+      "Category": "GAMES & TOYS",
+      "variable": "<0%",
+      "value": 132
+    },
+    {
+      "TOTAL": 100,
+      "Category": "AUDIO",
+      "variable": "<0%",
+      "value": 81
+    },
+    {
+      "TOTAL": 90,
+      "Category": "MUSIC, MOVIES & AUDIO BOOKS",
+      "variable": "<0%",
+      "value": 64
+    },
+    {
+      "TOTAL": 645,
+      "Category": "HOME APPLIANCES",
+      "variable": ">10%",
+      "value": 464
+    },
+    {
+      "TOTAL": 568,
+      "Category": "COMPUTERS",
+      "variable": ">10%",
+      "value": 395
+    },
+    {
+      "TOTAL": 355,
+      "Category": "CAMERAS & CAMCORDERS",
+      "variable": ">10%",
+      "value": 272
+    },
+    {
+      "TOTAL": 265,
+      "Category": "CELL PHONES",
+      "variable": ">10%",
+      "value": 196
+    },
+    {
+      "TOTAL": 205,
+      "Category": "TV & VIDEO",
+      "variable": ">10%",
+      "value": 149
+    },
+    {
+      "TOTAL": 166,
+      "Category": "GAMES & TOYS",
+      "variable": ">10%",
+      "value": 124
+    },
+    {
+      "TOTAL": 100,
+      "Category": "AUDIO",
+      "variable": ">10%",
+      "value": 66
+    },
+    {
+      "TOTAL": 90,
+      "Category": "MUSIC, MOVIES & AUDIO BOOKS",
+      "variable": ">10%",
+      "value": 61
+    },
+    {
+      "TOTAL": 645,
+      "Category": "HOME APPLIANCES",
+      "variable": ">=0%",
+      "value": 514
+    },
+    {
+      "TOTAL": 568,
+      "Category": "COMPUTERS",
+      "variable": ">=0%",
+      "value": 465
+    },
+    {
+      "TOTAL": 355,
+      "Category": "CAMERAS & CAMCORDERS",
+      "variable": ">=0%",
+      "value": 287
+    },
+    {
+      "TOTAL": 265,
+      "Category": "CELL PHONES",
+      "variable": ">=0%",
+      "value": 212
+    },
+    {
+      "TOTAL": 205,
+      "Category": "TV & VIDEO",
+      "variable": ">=0%",
+      "value": 163
+    },
+    {
+      "TOTAL": 166,
+      "Category": "GAMES & TOYS",
+      "variable": ">=0%",
+      "value": 141
+    },
+    {
+      "TOTAL": 100,
+      "Category": "AUDIO",
+      "variable": ">=0%",
+      "value": 87
+    },
+    {
+      "TOTAL": 90,
+      "Category": "MUSIC, MOVIES & AUDIO BOOKS",
+      "variable": ">=0%",
+      "value": 70
+    }
+  ],
+  "vl_spec": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "mark": {
+      "type": "bar"
+    },
+    "encoding": {
+      "color": {
+        "field": "variable",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Category",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "value",
+        "type": "quantitative"
+      }
+    }
+  }
+}

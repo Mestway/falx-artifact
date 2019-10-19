@@ -1,0 +1,1948 @@
+{
+  "input_data": [
+    {
+      "Order ID": 1,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 4270,
+      "Date": "1/6/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 2,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 8239,
+      "Date": "1/7/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 3,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 617,
+      "Date": "1/8/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 4,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 8384,
+      "Date": "1/10/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 5,
+      "Product": "Beans",
+      "Category": "Vegetables",
+      "Amount": 2626,
+      "Date": "1/10/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 6,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 3610,
+      "Date": "1/11/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 7,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 9062,
+      "Date": "1/11/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 8,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 6906,
+      "Date": "1/16/2012",
+      "Country": "New Zealand"
+    },
+    {
+      "Order ID": 9,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 2417,
+      "Date": "1/16/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 10,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 7431,
+      "Date": "1/16/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 11,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 8250,
+      "Date": "1/16/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 12,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 7012,
+      "Date": "1/18/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 13,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 1903,
+      "Date": "1/20/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 14,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 2824,
+      "Date": "1/22/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 15,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 6946,
+      "Date": "1/24/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 16,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 2320,
+      "Date": "1/27/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 17,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 2116,
+      "Date": "1/28/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 18,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 1135,
+      "Date": "1/30/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 19,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 3595,
+      "Date": "1/30/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 20,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 1161,
+      "Date": "2/2/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 21,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 2256,
+      "Date": "2/4/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 22,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 1004,
+      "Date": "2/11/2012",
+      "Country": "New Zealand"
+    },
+    {
+      "Order ID": 23,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 3642,
+      "Date": "2/14/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 24,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 4582,
+      "Date": "2/17/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 25,
+      "Product": "Beans",
+      "Category": "Vegetables",
+      "Amount": 3559,
+      "Date": "2/17/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 26,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 5154,
+      "Date": "2/17/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 27,
+      "Product": "Mango",
+      "Category": "Fruit",
+      "Amount": 7388,
+      "Date": "2/18/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 28,
+      "Product": "Beans",
+      "Category": "Vegetables",
+      "Amount": 7163,
+      "Date": "2/18/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 29,
+      "Product": "Beans",
+      "Category": "Vegetables",
+      "Amount": 5101,
+      "Date": "2/20/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 30,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 7602,
+      "Date": "2/21/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 31,
+      "Product": "Mango",
+      "Category": "Fruit",
+      "Amount": 1641,
+      "Date": "2/22/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 32,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 8892,
+      "Date": "2/23/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 33,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 2060,
+      "Date": "2/29/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 34,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 1557,
+      "Date": "2/29/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 35,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 6509,
+      "Date": "3/1/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 36,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 5718,
+      "Date": "3/4/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 37,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 7655,
+      "Date": "3/5/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 38,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 9116,
+      "Date": "3/5/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 39,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 2795,
+      "Date": "3/15/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 40,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 5084,
+      "Date": "3/15/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 41,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 8941,
+      "Date": "3/15/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 42,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 5341,
+      "Date": "3/16/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 43,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 135,
+      "Date": "3/19/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 44,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 9400,
+      "Date": "3/19/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 45,
+      "Product": "Beans",
+      "Category": "Vegetables",
+      "Amount": 6045,
+      "Date": "3/21/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 46,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 5820,
+      "Date": "3/22/2012",
+      "Country": "New Zealand"
+    },
+    {
+      "Order ID": 47,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 8887,
+      "Date": "3/23/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 48,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 6982,
+      "Date": "3/24/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 49,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 4029,
+      "Date": "3/26/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 50,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 3665,
+      "Date": "3/26/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 51,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 4781,
+      "Date": "3/29/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 52,
+      "Product": "Mango",
+      "Category": "Fruit",
+      "Amount": 3663,
+      "Date": "3/30/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 53,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 6331,
+      "Date": "4/1/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 54,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 4364,
+      "Date": "4/1/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 55,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 607,
+      "Date": "4/3/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 56,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 1054,
+      "Date": "4/6/2012",
+      "Country": "New Zealand"
+    },
+    {
+      "Order ID": 57,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 7659,
+      "Date": "4/6/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 58,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 277,
+      "Date": "4/12/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 59,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 235,
+      "Date": "4/17/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 60,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 1113,
+      "Date": "4/18/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 61,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 1128,
+      "Date": "4/21/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 62,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 9231,
+      "Date": "4/22/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 63,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 4387,
+      "Date": "4/23/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 64,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 2763,
+      "Date": "4/25/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 65,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 7898,
+      "Date": "4/27/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 66,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 2427,
+      "Date": "4/30/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 67,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 8663,
+      "Date": "5/1/2012",
+      "Country": "New Zealand"
+    },
+    {
+      "Order ID": 68,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 2789,
+      "Date": "5/1/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 69,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 4054,
+      "Date": "5/2/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 70,
+      "Product": "Mango",
+      "Category": "Fruit",
+      "Amount": 2262,
+      "Date": "5/2/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 71,
+      "Product": "Mango",
+      "Category": "Fruit",
+      "Amount": 5600,
+      "Date": "5/2/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 72,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 5787,
+      "Date": "5/3/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 73,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 6295,
+      "Date": "5/3/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 74,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 474,
+      "Date": "5/5/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 75,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 4325,
+      "Date": "5/5/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 76,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 592,
+      "Date": "5/6/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 77,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 4330,
+      "Date": "5/8/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 78,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 9405,
+      "Date": "5/8/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 79,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 7671,
+      "Date": "5/8/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 80,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 5791,
+      "Date": "5/8/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 81,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 6007,
+      "Date": "5/12/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 82,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 5030,
+      "Date": "5/14/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 83,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 6763,
+      "Date": "5/14/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 84,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 4248,
+      "Date": "5/15/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 85,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 9543,
+      "Date": "5/16/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 86,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 2054,
+      "Date": "5/16/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 87,
+      "Product": "Beans",
+      "Category": "Vegetables",
+      "Amount": 7094,
+      "Date": "5/16/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 88,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 6087,
+      "Date": "5/18/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 89,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 4264,
+      "Date": "5/19/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 90,
+      "Product": "Mango",
+      "Category": "Fruit",
+      "Amount": 9333,
+      "Date": "5/20/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 91,
+      "Product": "Mango",
+      "Category": "Fruit",
+      "Amount": 8775,
+      "Date": "5/22/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 92,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 2011,
+      "Date": "5/23/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 93,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 5632,
+      "Date": "5/25/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 94,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 4904,
+      "Date": "5/25/2012",
+      "Country": "New Zealand"
+    },
+    {
+      "Order ID": 95,
+      "Product": "Beans",
+      "Category": "Vegetables",
+      "Amount": 1002,
+      "Date": "5/25/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 96,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 8141,
+      "Date": "5/26/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 97,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 3644,
+      "Date": "5/26/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 98,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 1380,
+      "Date": "5/26/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 99,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 8354,
+      "Date": "5/26/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 100,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 5182,
+      "Date": "5/27/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 101,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 2193,
+      "Date": "5/27/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 102,
+      "Product": "Mango",
+      "Category": "Fruit",
+      "Amount": 3647,
+      "Date": "5/28/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 103,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 4104,
+      "Date": "5/28/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 104,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 7457,
+      "Date": "5/28/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 105,
+      "Product": "Mango",
+      "Category": "Fruit",
+      "Amount": 3767,
+      "Date": "5/29/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 106,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 4685,
+      "Date": "5/30/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 107,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 3917,
+      "Date": "6/4/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 108,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 521,
+      "Date": "6/4/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 109,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 5605,
+      "Date": "6/10/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 110,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 9630,
+      "Date": "6/11/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 111,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 6941,
+      "Date": "6/20/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 112,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 7231,
+      "Date": "6/20/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 113,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 8891,
+      "Date": "6/23/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 114,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 107,
+      "Date": "6/25/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 115,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 4243,
+      "Date": "6/26/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 116,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 4514,
+      "Date": "6/27/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 117,
+      "Product": "Mango",
+      "Category": "Fruit",
+      "Amount": 5480,
+      "Date": "7/2/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 118,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 5002,
+      "Date": "7/2/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 119,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 8530,
+      "Date": "7/5/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 120,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 4819,
+      "Date": "7/7/2012",
+      "Country": "New Zealand"
+    },
+    {
+      "Order ID": 121,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 6343,
+      "Date": "7/11/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 122,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 2318,
+      "Date": "7/13/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 123,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 220,
+      "Date": "7/20/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 124,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 6341,
+      "Date": "7/20/2012",
+      "Country": "New Zealand"
+    },
+    {
+      "Order ID": 125,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 330,
+      "Date": "7/20/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 126,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 3027,
+      "Date": "7/20/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 127,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 850,
+      "Date": "7/22/2012",
+      "Country": "New Zealand"
+    },
+    {
+      "Order ID": 128,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 8986,
+      "Date": "7/23/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 129,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 3800,
+      "Date": "7/25/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 130,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 5751,
+      "Date": "7/28/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 131,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 1704,
+      "Date": "7/29/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 132,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 7966,
+      "Date": "7/30/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 133,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 852,
+      "Date": "7/31/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 134,
+      "Product": "Beans",
+      "Category": "Vegetables",
+      "Amount": 8416,
+      "Date": "7/31/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 135,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 7144,
+      "Date": "8/1/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 136,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 7854,
+      "Date": "8/1/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 137,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 859,
+      "Date": "8/3/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 138,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 8049,
+      "Date": "8/12/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 139,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 2836,
+      "Date": "8/13/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 140,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 1743,
+      "Date": "8/19/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 141,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 3844,
+      "Date": "8/23/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 142,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 7490,
+      "Date": "8/24/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 143,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 4483,
+      "Date": "8/25/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 144,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 7333,
+      "Date": "8/27/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 145,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 7654,
+      "Date": "8/28/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 146,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 3944,
+      "Date": "8/29/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 147,
+      "Product": "Beans",
+      "Category": "Vegetables",
+      "Amount": 5761,
+      "Date": "8/29/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 148,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 6864,
+      "Date": "9/1/2012",
+      "Country": "New Zealand"
+    },
+    {
+      "Order ID": 149,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 4016,
+      "Date": "9/1/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 150,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 1841,
+      "Date": "9/2/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 151,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 424,
+      "Date": "9/5/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 152,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 8765,
+      "Date": "9/7/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 153,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 5583,
+      "Date": "9/8/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 154,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 4390,
+      "Date": "9/9/2012",
+      "Country": "New Zealand"
+    },
+    {
+      "Order ID": 155,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 352,
+      "Date": "9/9/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 156,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 8489,
+      "Date": "9/11/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 157,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 7090,
+      "Date": "9/11/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 158,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 7880,
+      "Date": "9/15/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 159,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 3861,
+      "Date": "9/18/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 160,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 7927,
+      "Date": "9/19/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 161,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 6162,
+      "Date": "9/20/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 162,
+      "Product": "Mango",
+      "Category": "Fruit",
+      "Amount": 5523,
+      "Date": "9/25/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 163,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 5936,
+      "Date": "9/25/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 164,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 7251,
+      "Date": "9/26/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 165,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 6187,
+      "Date": "9/27/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 166,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 3210,
+      "Date": "9/29/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 167,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 682,
+      "Date": "9/29/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 168,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 793,
+      "Date": "10/3/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 169,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 5346,
+      "Date": "10/4/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 170,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 7103,
+      "Date": "10/7/2012",
+      "Country": "New Zealand"
+    },
+    {
+      "Order ID": 171,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 4603,
+      "Date": "10/10/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 172,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 8160,
+      "Date": "10/16/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 173,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 7171,
+      "Date": "10/23/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 174,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 3552,
+      "Date": "10/23/2012",
+      "Country": "New Zealand"
+    },
+    {
+      "Order ID": 175,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 7273,
+      "Date": "10/25/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 176,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 2402,
+      "Date": "10/26/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 177,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 1197,
+      "Date": "10/26/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 178,
+      "Product": "Beans",
+      "Category": "Vegetables",
+      "Amount": 5015,
+      "Date": "10/26/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 179,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 5818,
+      "Date": "11/2/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 180,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 4399,
+      "Date": "11/3/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 181,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 3011,
+      "Date": "11/3/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 182,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 4715,
+      "Date": "11/9/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 183,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 5321,
+      "Date": "11/12/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 184,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 8894,
+      "Date": "11/15/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 185,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 4846,
+      "Date": "11/25/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 186,
+      "Product": "Broccoli",
+      "Category": "Vegetables",
+      "Amount": 284,
+      "Date": "11/25/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 187,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 8283,
+      "Date": "11/26/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 188,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 9990,
+      "Date": "11/28/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 189,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 9014,
+      "Date": "11/28/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 190,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 1942,
+      "Date": "11/29/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 191,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 7223,
+      "Date": "11/30/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 192,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 4673,
+      "Date": "12/2/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 193,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 9104,
+      "Date": "12/4/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 194,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 6078,
+      "Date": "12/5/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 195,
+      "Product": "Beans",
+      "Category": "Vegetables",
+      "Amount": 3278,
+      "Date": "12/6/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 196,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 136,
+      "Date": "12/12/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 197,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 8377,
+      "Date": "12/12/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 198,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 2382,
+      "Date": "12/12/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 199,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 8702,
+      "Date": "12/15/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 200,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 5021,
+      "Date": "12/16/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 201,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 1760,
+      "Date": "12/16/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 202,
+      "Product": "Banana",
+      "Category": "Fruit",
+      "Amount": 4766,
+      "Date": "12/18/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 203,
+      "Product": "Beans",
+      "Category": "Vegetables",
+      "Amount": 1541,
+      "Date": "12/19/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 204,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 2782,
+      "Date": "12/20/2012",
+      "Country": "United Kingdom"
+    },
+    {
+      "Order ID": 205,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 2455,
+      "Date": "12/20/2012",
+      "Country": "Canada"
+    },
+    {
+      "Order ID": 206,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 4512,
+      "Date": "12/22/2012",
+      "Country": "New Zealand"
+    },
+    {
+      "Order ID": 207,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 8752,
+      "Date": "12/22/2012",
+      "Country": "Germany"
+    },
+    {
+      "Order ID": 208,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 9127,
+      "Date": "12/25/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 209,
+      "Product": "Apple",
+      "Category": "Fruit",
+      "Amount": 1777,
+      "Date": "12/28/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 210,
+      "Product": "Beans",
+      "Category": "Vegetables",
+      "Amount": 680,
+      "Date": "12/28/2012",
+      "Country": "France"
+    },
+    {
+      "Order ID": 211,
+      "Product": "Orange",
+      "Category": "Fruit",
+      "Amount": 958,
+      "Date": "12/29/2012",
+      "Country": "United States"
+    },
+    {
+      "Order ID": 212,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 2613,
+      "Date": "12/29/2012",
+      "Country": "Australia"
+    },
+    {
+      "Order ID": 213,
+      "Product": "Carrots",
+      "Category": "Vegetables",
+      "Amount": 339,
+      "Date": "12/30/2012",
+      "Country": "Australia"
+    }
+  ],
+  "output_data": [
+    {
+      "Product": "Apple",
+      "Country": "Australia",
+      "Amount": 20634
+    },
+    {
+      "Product": "Apple",
+      "Country": "Canada",
+      "Amount": 24867
+    },
+    {
+      "Product": "Apple",
+      "Country": "France",
+      "Amount": 80193
+    },
+    {
+      "Product": "Apple",
+      "Country": "Germany",
+      "Amount": 9082
+    },
+    {
+      "Product": "Apple",
+      "Country": "New Zealand",
+      "Amount": 10332
+    },
+    {
+      "Product": "Apple",
+      "Country": "United Kingdom",
+      "Amount": 17534
+    },
+    {
+      "Product": "Apple",
+      "Country": "United States",
+      "Amount": 28615
+    },
+    {
+      "Product": "Banana",
+      "Country": "Australia",
+      "Amount": 52721
+    },
+    {
+      "Product": "Banana",
+      "Country": "Canada",
+      "Amount": 33775
+    },
+    {
+      "Product": "Banana",
+      "Country": "France",
+      "Amount": 36094
+    },
+    {
+      "Product": "Banana",
+      "Country": "Germany",
+      "Amount": 39686
+    },
+    {
+      "Product": "Banana",
+      "Country": "New Zealand",
+      "Amount": 40050
+    },
+    {
+      "Product": "Banana",
+      "Country": "United Kingdom",
+      "Amount": 42908
+    },
+    {
+      "Product": "Banana",
+      "Country": "United States",
+      "Amount": 95061
+    },
+    {
+      "Product": "Beans",
+      "Country": "Australia",
+      "Amount": 14433
+    },
+    {
+      "Product": "Beans",
+      "Country": "France",
+      "Amount": 680
+    },
+    {
+      "Product": "Beans",
+      "Country": "Germany",
+      "Amount": 29905
+    },
+    {
+      "Product": "Beans",
+      "Country": "United Kingdom",
+      "Amount": 5100
+    },
+    {
+      "Product": "Beans",
+      "Country": "United States",
+      "Amount": 7163
+    },
+    {
+      "Product": "Broccoli",
+      "Country": "Australia",
+      "Amount": 17953
+    },
+    {
+      "Product": "Broccoli",
+      "Country": "Canada",
+      "Amount": 12407
+    },
+    {
+      "Product": "Broccoli",
+      "Country": "France",
+      "Amount": 5341
+    },
+    {
+      "Product": "Broccoli",
+      "Country": "Germany",
+      "Amount": 37197
+    },
+    {
+      "Product": "Broccoli",
+      "Country": "New Zealand",
+      "Amount": 4390
+    },
+    {
+      "Product": "Broccoli",
+      "Country": "United Kingdom",
+      "Amount": 38436
+    },
+    {
+      "Product": "Broccoli",
+      "Country": "United States",
+      "Amount": 26715
+    },
+    {
+      "Product": "Carrots",
+      "Country": "Australia",
+      "Amount": 8106
+    },
+    {
+      "Product": "Carrots",
+      "Country": "France",
+      "Amount": 9104
+    },
+    {
+      "Product": "Carrots",
+      "Country": "Germany",
+      "Amount": 21636
+    },
+    {
+      "Product": "Carrots",
+      "Country": "United Kingdom",
+      "Amount": 41815
+    },
+    {
+      "Product": "Carrots",
+      "Country": "United States",
+      "Amount": 56284
+    },
+    {
+      "Product": "Mango",
+      "Country": "Australia",
+      "Amount": 9186
+    },
+    {
+      "Product": "Mango",
+      "Country": "Canada",
+      "Amount": 3767
+    },
+    {
+      "Product": "Mango",
+      "Country": "France",
+      "Amount": 7388
+    },
+    {
+      "Product": "Mango",
+      "Country": "Germany",
+      "Amount": 8775
+    },
+    {
+      "Product": "Mango",
+      "Country": "United Kingdom",
+      "Amount": 5600
+    },
+    {
+      "Product": "Mango",
+      "Country": "United States",
+      "Amount": 22363
+    },
+    {
+      "Product": "Orange",
+      "Country": "Australia",
+      "Amount": 8680
+    },
+    {
+      "Product": "Orange",
+      "Country": "Canada",
+      "Amount": 19929
+    },
+    {
+      "Product": "Orange",
+      "Country": "France",
+      "Amount": 2256
+    },
+    {
+      "Product": "Orange",
+      "Country": "Germany",
+      "Amount": 8887
+    },
+    {
+      "Product": "Orange",
+      "Country": "New Zealand",
+      "Amount": 12010
+    },
+    {
+      "Product": "Orange",
+      "Country": "United Kingdom",
+      "Amount": 21744
+    },
+    {
+      "Product": "Orange",
+      "Country": "United States",
+      "Amount": 30932
+    }
+  ],
+  "vl_spec": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "Country",
+        "type": "nominal"
+      },
+      "color": {
+        "field": "Product",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Amount",
+        "type": "quantitative"
+      }
+    }
+  }
+}

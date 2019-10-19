@@ -1,0 +1,207 @@
+{
+  "input_data": [
+    {
+      "Country": "Australia",
+      "Beans": 14433,
+      "Broccoli": 17953,
+      "Carrots": 8106,
+      "Total Result": 40492
+    },
+    {
+      "Country": "Canada",
+      "Beans": 0,
+      "Broccoli": 12407,
+      "Carrots": 0,
+      "Total Result": 12407
+    },
+    {
+      "Country": "France",
+      "Beans": 680,
+      "Broccoli": 5341,
+      "Carrots": 9104,
+      "Total Result": 15125
+    },
+    {
+      "Country": "Germany",
+      "Beans": 29905,
+      "Broccoli": 37197,
+      "Carrots": 21636,
+      "Total Result": 88738
+    },
+    {
+      "Country": "New Zealand",
+      "Beans": 0,
+      "Broccoli": 4390,
+      "Carrots": 0,
+      "Total Result": 4390
+    },
+    {
+      "Country": "United Kingdom",
+      "Beans": 5100,
+      "Broccoli": 38436,
+      "Carrots": 41815,
+      "Total Result": 85351
+    },
+    {
+      "Country": "United States",
+      "Beans": 7163,
+      "Broccoli": 26715,
+      "Carrots": 56284,
+      "Total Result": 90162
+    },
+    {
+      "Country": "Total Result",
+      "Beans": 57281,
+      "Broccoli": 142439,
+      "Carrots": 136945,
+      "Total Result": 336665
+    }
+  ],
+  "output_data": [
+    {
+      "Country": "Australia",
+      "Total Result": 40492,
+      "variable": "Beans",
+      "value": 14433
+    },
+    {
+      "Country": "Canada",
+      "Total Result": 12407,
+      "variable": "Beans",
+      "value": 0
+    },
+    {
+      "Country": "France",
+      "Total Result": 15125,
+      "variable": "Beans",
+      "value": 680
+    },
+    {
+      "Country": "Germany",
+      "Total Result": 88738,
+      "variable": "Beans",
+      "value": 29905
+    },
+    {
+      "Country": "New Zealand",
+      "Total Result": 4390,
+      "variable": "Beans",
+      "value": 0
+    },
+    {
+      "Country": "United Kingdom",
+      "Total Result": 85351,
+      "variable": "Beans",
+      "value": 5100
+    },
+    {
+      "Country": "United States",
+      "Total Result": 90162,
+      "variable": "Beans",
+      "value": 7163
+    },
+    {
+      "Country": "Australia",
+      "Total Result": 40492,
+      "variable": "Broccoli",
+      "value": 17953
+    },
+    {
+      "Country": "Canada",
+      "Total Result": 12407,
+      "variable": "Broccoli",
+      "value": 12407
+    },
+    {
+      "Country": "France",
+      "Total Result": 15125,
+      "variable": "Broccoli",
+      "value": 5341
+    },
+    {
+      "Country": "Germany",
+      "Total Result": 88738,
+      "variable": "Broccoli",
+      "value": 37197
+    },
+    {
+      "Country": "New Zealand",
+      "Total Result": 4390,
+      "variable": "Broccoli",
+      "value": 4390
+    },
+    {
+      "Country": "United Kingdom",
+      "Total Result": 85351,
+      "variable": "Broccoli",
+      "value": 38436
+    },
+    {
+      "Country": "United States",
+      "Total Result": 90162,
+      "variable": "Broccoli",
+      "value": 26715
+    },
+    {
+      "Country": "Australia",
+      "Total Result": 40492,
+      "variable": "Carrots",
+      "value": 8106
+    },
+    {
+      "Country": "Canada",
+      "Total Result": 12407,
+      "variable": "Carrots",
+      "value": 0
+    },
+    {
+      "Country": "France",
+      "Total Result": 15125,
+      "variable": "Carrots",
+      "value": 9104
+    },
+    {
+      "Country": "Germany",
+      "Total Result": 88738,
+      "variable": "Carrots",
+      "value": 21636
+    },
+    {
+      "Country": "New Zealand",
+      "Total Result": 4390,
+      "variable": "Carrots",
+      "value": 0
+    },
+    {
+      "Country": "United Kingdom",
+      "Total Result": 85351,
+      "variable": "Carrots",
+      "value": 41815
+    },
+    {
+      "Country": "United States",
+      "Total Result": 90162,
+      "variable": "Carrots",
+      "value": 56284
+    }
+  ],
+  "vl_spec": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "variable",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative"
+      },
+      "column": {
+        "field": "Country",
+        "type": "nominal"
+      }
+    }
+  },
+  "constants": ["Total Result"]
+}

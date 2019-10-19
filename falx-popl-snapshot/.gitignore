@@ -1,0 +1,8 @@
+*/.ipynb_checkpoints/*
+__temp__/*
+*/__pycache__/*
+*.pyc
+*.DS_Store
+*.Rhistory
+venv/*
+*.egg-info

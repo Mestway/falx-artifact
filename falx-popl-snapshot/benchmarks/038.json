@@ -1,0 +1,242 @@
+{
+    "input_data": [
+        {
+            "x": 1,
+            "group1": 56,
+            "group2": 63,
+            "group3": 51,
+            "group4": 53
+        },
+        {
+            "x": 2,
+            "group1": 23,
+            "group2": 34,
+            "group3": 46,
+            "group4": 52
+        },
+        {
+            "x": 3,
+            "group1": 96,
+            "group2": 45,
+            "group3": 63,
+            "group4": 74
+        },
+        {
+            "x": 4,
+            "group1": 24,
+            "group2": 36,
+            "group3": 33,
+            "group4": 95
+        },
+        {
+            "x": 5,
+            "group1": 75,
+            "group2": 47,
+            "group3": 33,
+            "group4": 46
+        },
+        {
+            "x": 6,
+            "group1": 67,
+            "group2": 43,
+            "group3": 34,
+            "group4": 78
+        },
+        {
+            "x": 7,
+            "group1": 42,
+            "group2": 51,
+            "group3": 83,
+            "group4": 55
+        },
+        {
+            "x": 8,
+            "group1": 45,
+            "group2": 94,
+            "group3": 40,
+            "group4": 41
+        }
+    ],
+    "output_data": [
+        {
+            "x": 1,
+            "variable": "group1",
+            "value": 56
+        },
+        {
+            "x": 2,
+            "variable": "group1",
+            "value": 23
+        },
+        {
+            "x": 3,
+            "variable": "group1",
+            "value": 96
+        },
+        {
+            "x": 4,
+            "variable": "group1",
+            "value": 24
+        },
+        {
+            "x": 5,
+            "variable": "group1",
+            "value": 75
+        },
+        {
+            "x": 6,
+            "variable": "group1",
+            "value": 67
+        },
+        {
+            "x": 7,
+            "variable": "group1",
+            "value": 42
+        },
+        {
+            "x": 8,
+            "variable": "group1",
+            "value": 45
+        },
+        {
+            "x": 1,
+            "variable": "group2",
+            "value": 63
+        },
+        {
+            "x": 2,
+            "variable": "group2",
+            "value": 34
+        },
+        {
+            "x": 3,
+            "variable": "group2",
+            "value": 45
+        },
+        {
+            "x": 4,
+            "variable": "group2",
+            "value": 36
+        },
+        {
+            "x": 5,
+            "variable": "group2",
+            "value": 47
+        },
+        {
+            "x": 6,
+            "variable": "group2",
+            "value": 43
+        },
+        {
+            "x": 7,
+            "variable": "group2",
+            "value": 51
+        },
+        {
+            "x": 8,
+            "variable": "group2",
+            "value": 94
+        },
+        {
+            "x": 1,
+            "variable": "group3",
+            "value": 51
+        },
+        {
+            "x": 2,
+            "variable": "group3",
+            "value": 46
+        },
+        {
+            "x": 3,
+            "variable": "group3",
+            "value": 63
+        },
+        {
+            "x": 4,
+            "variable": "group3",
+            "value": 33
+        },
+        {
+            "x": 5,
+            "variable": "group3",
+            "value": 33
+        },
+        {
+            "x": 6,
+            "variable": "group3",
+            "value": 34
+        },
+        {
+            "x": 7,
+            "variable": "group3",
+            "value": 83
+        },
+        {
+            "x": 8,
+            "variable": "group3",
+            "value": 40
+        },
+        {
+            "x": 1,
+            "variable": "group4",
+            "value": 53
+        },
+        {
+            "x": 2,
+            "variable": "group4",
+            "value": 52
+        },
+        {
+            "x": 3,
+            "variable": "group4",
+            "value": 74
+        },
+        {
+            "x": 4,
+            "variable": "group4",
+            "value": 95
+        },
+        {
+            "x": 5,
+            "variable": "group4",
+            "value": 46
+        },
+        {
+            "x": 6,
+            "variable": "group4",
+            "value": 78
+        },
+        {
+            "x": 7,
+            "variable": "group4",
+            "value": 55
+        },
+        {
+            "x": 8,
+            "variable": "group4",
+            "value": 41
+        }
+    ],
+    "vl_spec": {
+        "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+        "mark": {
+            "type": "area"
+        },
+        "encoding": {
+            "x": {
+                "field": "x",
+                "type": "ordinal"
+            },
+            "y": {
+                "field": "value",
+                "type": "quantitative"
+            },
+            "color": {
+                "field": "variable",
+                "type": "nominal"
+            }
+        }
+    }
+}

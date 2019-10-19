@@ -1,0 +1,584 @@
+{
+    "input_data": [
+        {
+            "id": 1,
+            "cat 1": 49554,
+            "cat 2": 19837,
+            "cat 3": 19890,
+            "cat 4": 36555,
+            "cat 5": 37865,
+            "cat 6": 44323
+        },
+        {
+            "id": 2,
+            "cat 1": 15787,
+            "cat 2": 5987,
+            "cat 3": 7989,
+            "cat 4": 14989,
+            "cat 5": 3425,
+            "cat 6": 43421
+        },
+        {
+            "id": 3,
+            "cat 1": 2525,
+            "cat 2": 1214,
+            "cat 3": 7762,
+            "cat 4": 5647,
+            "cat 5": 3321,
+            "cat 6": 21010
+        },
+        {
+            "id": 4,
+            "cat 1": 1678,
+            "cat 2": 1226,
+            "cat 3": 5643,
+            "cat 4": 3968,
+            "cat 5": -10210,
+            "cat 6": 9875
+        },
+        {
+            "id": 5,
+            "cat 1": 1514,
+            "cat 2": 542,
+            "cat 3": 4991,
+            "cat 4": 1987,
+            "cat 5": -13289,
+            "cat 6": 7674
+        },
+        {
+            "id": 6,
+            "cat 1": 987,
+            "cat 2": 120,
+            "cat 3": -363,
+            "cat 4": 1494,
+            "cat 5": 0,
+            "cat 6": 5534
+        },
+        {
+            "id": 7,
+            "cat 1": 574,
+            "cat 2": 69,
+            "cat 3": -2114,
+            "cat 4": 896,
+            "cat 5": 0,
+            "cat 6": 2331
+        },
+        {
+            "id": 8,
+            "cat 1": -331,
+            "cat 2": 0,
+            "cat 3": -3711,
+            "cat 4": 698,
+            "cat 5": 0,
+            "cat 6": 453
+        },
+        {
+            "id": 9,
+            "cat 1": -7652,
+            "cat 2": 0,
+            "cat 3": 0,
+            "cat 4": 124,
+            "cat 5": 0,
+            "cat 6": 411
+        },
+        {
+            "id": 10,
+            "cat 1": -11234,
+            "cat 2": 0,
+            "cat 3": 0,
+            "cat 4": -408,
+            "cat 5": 0,
+            "cat 6": -7674
+        },
+        {
+            "id": 11,
+            "cat 1": -18214,
+            "cat 2": 0,
+            "cat 3": 0,
+            "cat 4": -6564,
+            "cat 5": 0,
+            "cat 6": -8723
+        },
+        {
+            "id": 12,
+            "cat 1": 0,
+            "cat 2": 0,
+            "cat 3": 0,
+            "cat 4": -12268,
+            "cat 5": 0,
+            "cat 6": -32111
+        }
+    ],
+    "output_data": [
+        {
+            "id": 1,
+            "variable": "cat 1",
+            "value": 49554
+        },
+        {
+            "id": 2,
+            "variable": "cat 1",
+            "value": 15787
+        },
+        {
+            "id": 3,
+            "variable": "cat 1",
+            "value": 2525
+        },
+        {
+            "id": 4,
+            "variable": "cat 1",
+            "value": 1678
+        },
+        {
+            "id": 5,
+            "variable": "cat 1",
+            "value": 1514
+        },
+        {
+            "id": 6,
+            "variable": "cat 1",
+            "value": 987
+        },
+        {
+            "id": 7,
+            "variable": "cat 1",
+            "value": 574
+        },
+        {
+            "id": 8,
+            "variable": "cat 1",
+            "value": -331
+        },
+        {
+            "id": 9,
+            "variable": "cat 1",
+            "value": -7652
+        },
+        {
+            "id": 10,
+            "variable": "cat 1",
+            "value": -11234
+        },
+        {
+            "id": 11,
+            "variable": "cat 1",
+            "value": -18214
+        },
+        {
+            "id": 12,
+            "variable": "cat 1",
+            "value": 0
+        },
+        {
+            "id": 1,
+            "variable": "cat 2",
+            "value": 19837
+        },
+        {
+            "id": 2,
+            "variable": "cat 2",
+            "value": 5987
+        },
+        {
+            "id": 3,
+            "variable": "cat 2",
+            "value": 1214
+        },
+        {
+            "id": 4,
+            "variable": "cat 2",
+            "value": 1226
+        },
+        {
+            "id": 5,
+            "variable": "cat 2",
+            "value": 542
+        },
+        {
+            "id": 6,
+            "variable": "cat 2",
+            "value": 120
+        },
+        {
+            "id": 7,
+            "variable": "cat 2",
+            "value": 69
+        },
+        {
+            "id": 8,
+            "variable": "cat 2",
+            "value": 0
+        },
+        {
+            "id": 9,
+            "variable": "cat 2",
+            "value": 0
+        },
+        {
+            "id": 10,
+            "variable": "cat 2",
+            "value": 0
+        },
+        {
+            "id": 11,
+            "variable": "cat 2",
+            "value": 0
+        },
+        {
+            "id": 12,
+            "variable": "cat 2",
+            "value": 0
+        },
+        {
+            "id": 1,
+            "variable": "cat 3",
+            "value": 19890
+        },
+        {
+            "id": 2,
+            "variable": "cat 3",
+            "value": 7989
+        },
+        {
+            "id": 3,
+            "variable": "cat 3",
+            "value": 7762
+        },
+        {
+            "id": 4,
+            "variable": "cat 3",
+            "value": 5643
+        },
+        {
+            "id": 5,
+            "variable": "cat 3",
+            "value": 4991
+        },
+        {
+            "id": 6,
+            "variable": "cat 3",
+            "value": -363
+        },
+        {
+            "id": 7,
+            "variable": "cat 3",
+            "value": -2114
+        },
+        {
+            "id": 8,
+            "variable": "cat 3",
+            "value": -3711
+        },
+        {
+            "id": 9,
+            "variable": "cat 3",
+            "value": 0
+        },
+        {
+            "id": 10,
+            "variable": "cat 3",
+            "value": 0
+        },
+        {
+            "id": 11,
+            "variable": "cat 3",
+            "value": 0
+        },
+        {
+            "id": 12,
+            "variable": "cat 3",
+            "value": 0
+        },
+        {
+            "id": 1,
+            "variable": "cat 4",
+            "value": 36555
+        },
+        {
+            "id": 2,
+            "variable": "cat 4",
+            "value": 14989
+        },
+        {
+            "id": 3,
+            "variable": "cat 4",
+            "value": 5647
+        },
+        {
+            "id": 4,
+            "variable": "cat 4",
+            "value": 3968
+        },
+        {
+            "id": 5,
+            "variable": "cat 4",
+            "value": 1987
+        },
+        {
+            "id": 6,
+            "variable": "cat 4",
+            "value": 1494
+        },
+        {
+            "id": 7,
+            "variable": "cat 4",
+            "value": 896
+        },
+        {
+            "id": 8,
+            "variable": "cat 4",
+            "value": 698
+        },
+        {
+            "id": 9,
+            "variable": "cat 4",
+            "value": 124
+        },
+        {
+            "id": 10,
+            "variable": "cat 4",
+            "value": -408
+        },
+        {
+            "id": 11,
+            "variable": "cat 4",
+            "value": -6564
+        },
+        {
+            "id": 12,
+            "variable": "cat 4",
+            "value": -12268
+        },
+        {
+            "id": 1,
+            "variable": "cat 5",
+            "value": 37865
+        },
+        {
+            "id": 2,
+            "variable": "cat 5",
+            "value": 3425
+        },
+        {
+            "id": 3,
+            "variable": "cat 5",
+            "value": 3321
+        },
+        {
+            "id": 4,
+            "variable": "cat 5",
+            "value": -10210
+        },
+        {
+            "id": 5,
+            "variable": "cat 5",
+            "value": -13289
+        },
+        {
+            "id": 6,
+            "variable": "cat 5",
+            "value": 0
+        },
+        {
+            "id": 7,
+            "variable": "cat 5",
+            "value": 0
+        },
+        {
+            "id": 8,
+            "variable": "cat 5",
+            "value": 0
+        },
+        {
+            "id": 9,
+            "variable": "cat 5",
+            "value": 0
+        },
+        {
+            "id": 10,
+            "variable": "cat 5",
+            "value": 0
+        },
+        {
+            "id": 11,
+            "variable": "cat 5",
+            "value": 0
+        },
+        {
+            "id": 12,
+            "variable": "cat 5",
+            "value": 0
+        },
+        {
+            "id": 1,
+            "variable": "cat 6",
+            "value": 44323
+        },
+        {
+            "id": 2,
+            "variable": "cat 6",
+            "value": 43421
+        },
+        {
+            "id": 3,
+            "variable": "cat 6",
+            "value": 21010
+        },
+        {
+            "id": 4,
+            "variable": "cat 6",
+            "value": 9875
+        },
+        {
+            "id": 5,
+            "variable": "cat 6",
+            "value": 7674
+        },
+        {
+            "id": 6,
+            "variable": "cat 6",
+            "value": 5534
+        },
+        {
+            "id": 7,
+            "variable": "cat 6",
+            "value": 2331
+        },
+        {
+            "id": 8,
+            "variable": "cat 6",
+            "value": 453
+        },
+        {
+            "id": 9,
+            "variable": "cat 6",
+            "value": 411
+        },
+        {
+            "id": 10,
+            "variable": "cat 6",
+            "value": -7674
+        },
+        {
+            "id": 11,
+            "variable": "cat 6",
+            "value": -8723
+        },
+        {
+            "id": 12,
+            "variable": "cat 6",
+            "value": -32111
+        },
+        {
+            "id": 1,
+            "variable": "sum",
+            "value": 208024
+        },
+        {
+            "id": 2,
+            "variable": "sum",
+            "value": 91598
+        },
+        {
+            "id": 3,
+            "variable": "sum",
+            "value": 41479
+        },
+        {
+            "id": 4,
+            "variable": "sum",
+            "value": 12180
+        },
+        {
+            "id": 5,
+            "variable": "sum",
+            "value": 3419
+        },
+        {
+            "id": 6,
+            "variable": "sum",
+            "value": 7772
+        },
+        {
+            "id": 7,
+            "variable": "sum",
+            "value": 1756
+        },
+        {
+            "id": 8,
+            "variable": "sum",
+            "value": -2891
+        },
+        {
+            "id": 9,
+            "variable": "sum",
+            "value": -7117
+        },
+        {
+            "id": 10,
+            "variable": "sum",
+            "value": -19316
+        },
+        {
+            "id": 11,
+            "variable": "sum",
+            "value": -33501
+        },
+        {
+            "id": 12,
+            "variable": "sum",
+            "value": -44379
+        }
+    ],
+    "vl_spec": {
+        "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+        "layer": [
+            {
+                "mark": {
+                    "type": "bar"
+                },
+                "transform": [
+                    {
+                        "filter": "datum.variable != \"sum\""
+                    }
+                ],
+                "encoding": {
+                    "y": {
+                        "field": "value",
+                        "type": "quantitative"
+                    },
+                    "color": {
+                        "field": "variable",
+                        "type": "nominal"
+                    },
+                    "x": {
+                        "field": "id",
+                        "type": "nominal"
+                    }
+                }
+            },
+            {
+                "mark": {
+                    "opacity": 0.4,
+                    "type": "area"
+                },
+                "transform": [
+                    {
+                        "filter": "datum.variable == \"sum\""
+                    }
+                ],
+                "encoding": {
+                    "y": {
+                        "type": "quantitative",
+                        "field": "value"
+                    },
+                    "x": {
+                        "field": "id",
+                        "type": "nominal"
+                    }
+                }
+            }
+        ]
+    }
+}

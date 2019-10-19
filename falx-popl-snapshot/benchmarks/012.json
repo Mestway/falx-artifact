@@ -1,0 +1,412 @@
+{
+  "input_data": [
+    {
+      "C1": "Q1",
+      "C2": "Targeted",
+      "North_America": 56,
+      "EMEA": 66,
+      "APAC": 48,
+      "LATAM": 48
+    },
+    {
+      "C1": "Q1",
+      "C2": "Engaged",
+      "North_America": 52,
+      "EMEA": 65,
+      "APAC": 47,
+      "LATAM": 48
+    },
+    {
+      "C1": "Q1",
+      "C2": "Pitched",
+      "North_America": 45,
+      "EMEA": 59,
+      "APAC": 45,
+      "LATAM": 44
+    },
+    {
+      "C1": "Q1",
+      "C2": "Adopted",
+      "North_America": 36,
+      "EMEA": 52,
+      "APAC": 38,
+      "LATAM": 31
+    },
+    {
+      "C1": "Q2",
+      "C2": "Targeted",
+      "North_America": 50,
+      "EMEA": 56,
+      "APAC": 39,
+      "LATAM": 43
+    },
+    {
+      "C1": "Q2",
+      "C2": "Engaged",
+      "North_America": 43,
+      "EMEA": 54,
+      "APAC": 37,
+      "LATAM": 41
+    },
+    {
+      "C1": "Q2",
+      "C2": "Pitched",
+      "North_America": 39,
+      "EMEA": 50,
+      "APAC": 35,
+      "LATAM": 37
+    },
+    {
+      "C1": "Q2",
+      "C2": "Adopted",
+      "North_America": 31,
+      "EMEA": 42,
+      "APAC": 27,
+      "LATAM": 26
+    },
+    {
+      "C1": "Q3",
+      "C2": "Targeted",
+      "North_America": 70,
+      "EMEA": 91,
+      "APAC": 87,
+      "LATAM": 95
+    },
+    {
+      "C1": "Q3",
+      "C2": "Engaged",
+      "North_America": 55,
+      "EMEA": 78,
+      "APAC": 75,
+      "LATAM": 80
+    },
+    {
+      "C1": "Q3",
+      "C2": "Pitched",
+      "North_America": 50,
+      "EMEA": 72,
+      "APAC": 74,
+      "LATAM": 73
+    },
+    {
+      "C1": "Q3",
+      "C2": "Adopted",
+      "North_America": 40,
+      "EMEA": 62,
+      "APAC": 59,
+      "LATAM": 53
+    }
+  ],
+  "output_data": [
+    {
+      "C1": "Q1",
+      "C2": "Targeted",
+      "variable": "EMEA",
+      "value": 66
+    },
+    {
+      "C1": "Q1",
+      "C2": "Engaged",
+      "variable": "EMEA",
+      "value": 65
+    },
+    {
+      "C1": "Q1",
+      "C2": "Pitched",
+      "variable": "EMEA",
+      "value": 59
+    },
+    {
+      "C1": "Q1",
+      "C2": "Adopted",
+      "variable": "EMEA",
+      "value": 52
+    },
+    {
+      "C1": "Q2",
+      "C2": "Targeted",
+      "variable": "EMEA",
+      "value": 56
+    },
+    {
+      "C1": "Q2",
+      "C2": "Engaged",
+      "variable": "EMEA",
+      "value": 54
+    },
+    {
+      "C1": "Q2",
+      "C2": "Pitched",
+      "variable": "EMEA",
+      "value": 50
+    },
+    {
+      "C1": "Q2",
+      "C2": "Adopted",
+      "variable": "EMEA",
+      "value": 42
+    },
+    {
+      "C1": "Q3",
+      "C2": "Targeted",
+      "variable": "EMEA",
+      "value": 91
+    },
+    {
+      "C1": "Q3",
+      "C2": "Engaged",
+      "variable": "EMEA",
+      "value": 78
+    },
+    {
+      "C1": "Q3",
+      "C2": "Pitched",
+      "variable": "EMEA",
+      "value": 72
+    },
+    {
+      "C1": "Q3",
+      "C2": "Adopted",
+      "variable": "EMEA",
+      "value": 62
+    },
+    {
+      "C1": "Q1",
+      "C2": "Targeted",
+      "variable": "LATAM",
+      "value": 48
+    },
+    {
+      "C1": "Q1",
+      "C2": "Engaged",
+      "variable": "LATAM",
+      "value": 48
+    },
+    {
+      "C1": "Q1",
+      "C2": "Pitched",
+      "variable": "LATAM",
+      "value": 44
+    },
+    {
+      "C1": "Q1",
+      "C2": "Adopted",
+      "variable": "LATAM",
+      "value": 31
+    },
+    {
+      "C1": "Q2",
+      "C2": "Targeted",
+      "variable": "LATAM",
+      "value": 43
+    },
+    {
+      "C1": "Q2",
+      "C2": "Engaged",
+      "variable": "LATAM",
+      "value": 41
+    },
+    {
+      "C1": "Q2",
+      "C2": "Pitched",
+      "variable": "LATAM",
+      "value": 37
+    },
+    {
+      "C1": "Q2",
+      "C2": "Adopted",
+      "variable": "LATAM",
+      "value": 26
+    },
+    {
+      "C1": "Q3",
+      "C2": "Targeted",
+      "variable": "LATAM",
+      "value": 95
+    },
+    {
+      "C1": "Q3",
+      "C2": "Engaged",
+      "variable": "LATAM",
+      "value": 80
+    },
+    {
+      "C1": "Q3",
+      "C2": "Pitched",
+      "variable": "LATAM",
+      "value": 73
+    },
+    {
+      "C1": "Q3",
+      "C2": "Adopted",
+      "variable": "LATAM",
+      "value": 53
+    },
+    {
+      "C1": "Q1",
+      "C2": "Targeted",
+      "variable": "North_America",
+      "value": 56
+    },
+    {
+      "C1": "Q1",
+      "C2": "Engaged",
+      "variable": "North_America",
+      "value": 52
+    },
+    {
+      "C1": "Q1",
+      "C2": "Pitched",
+      "variable": "North_America",
+      "value": 45
+    },
+    {
+      "C1": "Q1",
+      "C2": "Adopted",
+      "variable": "North_America",
+      "value": 36
+    },
+    {
+      "C1": "Q2",
+      "C2": "Targeted",
+      "variable": "North_America",
+      "value": 50
+    },
+    {
+      "C1": "Q2",
+      "C2": "Engaged",
+      "variable": "North_America",
+      "value": 43
+    },
+    {
+      "C1": "Q2",
+      "C2": "Pitched",
+      "variable": "North_America",
+      "value": 39
+    },
+    {
+      "C1": "Q2",
+      "C2": "Adopted",
+      "variable": "North_America",
+      "value": 31
+    },
+    {
+      "C1": "Q3",
+      "C2": "Targeted",
+      "variable": "North_America",
+      "value": 70
+    },
+    {
+      "C1": "Q3",
+      "C2": "Engaged",
+      "variable": "North_America",
+      "value": 55
+    },
+    {
+      "C1": "Q3",
+      "C2": "Pitched",
+      "variable": "North_America",
+      "value": 50
+    },
+    {
+      "C1": "Q3",
+      "C2": "Adopted",
+      "variable": "North_America",
+      "value": 40
+    },
+    {
+      "C1": "Q1",
+      "C2": "Targeted",
+      "variable": "APAC",
+      "value": 48
+    },
+    {
+      "C1": "Q1",
+      "C2": "Engaged",
+      "variable": "APAC",
+      "value": 47
+    },
+    {
+      "C1": "Q1",
+      "C2": "Pitched",
+      "variable": "APAC",
+      "value": 45
+    },
+    {
+      "C1": "Q1",
+      "C2": "Adopted",
+      "variable": "APAC",
+      "value": 38
+    },
+    {
+      "C1": "Q2",
+      "C2": "Targeted",
+      "variable": "APAC",
+      "value": 39
+    },
+    {
+      "C1": "Q2",
+      "C2": "Engaged",
+      "variable": "APAC",
+      "value": 37
+    },
+    {
+      "C1": "Q2",
+      "C2": "Pitched",
+      "variable": "APAC",
+      "value": 35
+    },
+    {
+      "C1": "Q2",
+      "C2": "Adopted",
+      "variable": "APAC",
+      "value": 27
+    },
+    {
+      "C1": "Q3",
+      "C2": "Targeted",
+      "variable": "APAC",
+      "value": 87
+    },
+    {
+      "C1": "Q3",
+      "C2": "Engaged",
+      "variable": "APAC",
+      "value": 75
+    },
+    {
+      "C1": "Q3",
+      "C2": "Pitched",
+      "variable": "APAC",
+      "value": 74
+    },
+    {
+      "C1": "Q3",
+      "C2": "Adopted",
+      "variable": "APAC",
+      "value": 59
+    }
+  ],
+  "vl_spec": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "mark": "line",
+    "encoding": {
+      "y": {
+        "field": "value",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "C2",
+        "type": "nominal"
+      },
+      "column": {
+        "field": "variable",
+        "type": "nominal"
+      },
+      "color": {
+        "field": "C1",
+        "type": "nominal"
+      }
+    }
+  }
+}
