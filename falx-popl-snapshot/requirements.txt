@@ -5,3 +5,8 @@ dpath
 rpy2
 jsonschema
 namedlist
+z3
+z3-solver
+matplotlib
+click
+sexpdata

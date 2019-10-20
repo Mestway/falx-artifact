@@ -10,7 +10,7 @@ echo ${timeout_cmd}
 dt=$(date '+%Y%m%d_%H%M%S')
 
 dirname="../benchmarks/"
-num_samples=3
+num_samples=4
 time_limit=600
 ###falx | forward | morpheus | none
 prune=falx
