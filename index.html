@@ -41,11 +41,13 @@
       <p>Once in the docker, run the following commands to install dependencies. These commands install python dependencies of our tool, and configure the R environment that is needed to interpret table transformation programs. Note that configuring R environments can take a while (up to 20 minutes).</p>
 
       <pre>cd /falx-popl-snapshot/artifact
-pip3 install -r requirements
+pip3 install -r requirements.txt
 pip3 install -e .
 echo "install.packages(\"dplyr\", dependencies=TRUE); install.packages(\"tidyr\", dependencies=TRUE);install.packages(\"jsonlite\", dependencies=TRUE);install.packages(\"compare\", dependencies=TRUE)" | R --save</pre>
 
-      <p>In a rare event that your docker building process get broken, you can (1) delete the docker container using command <code>docker rm CONTAINER_ID</code>, where <code>CONTAINER_ID</code> of the docker you just built can be looked up with command <code>docker ps -a</code>  (look for the container built from an image named <code>falx-artifact-img</code>) and (2) delete the the docker image (with command <code>docker rmi falx-artifact-img</code>), and then start over from the first step.</p>
+      <p><span style="font-weight: bold;text-decoration:underline;">How to start over?</span> In a rare event that your docker building process get broken or you want to destroy your docker container and start over, you can (1) delete the docker container using command <code>docker rm CONTAINER_ID</code>, where <code>CONTAINER_ID</code> of the docker you just built can be looked up with command <code>docker ps -a</code>  (look for the container built from an image named <code>falx-artifact-img</code>) and (2) delete the the docker image (with command <code>docker rmi falx-artifact-img</code>), and then start over from the first step.
+      </p>
+      <p>Make sure you re-run scripts to re-install all dependencies again after you rebuild the docker container.</p>
 
       <h2>Overview</h2>
 
@@ -74,7 +76,7 @@ echo "install.packages(\"dplyr\", dependencies=TRUE); install.packages(\"tidyr\"
 cd /falx-popl-snapshot/artifact/falx
 bash full_eval.sh ALGORITHM NUM_SAMPLES TIMEOUT</pre>
 
-      <p>The evaluation script requires you to provide (1) the synthesis algorithm name, (2) the number of samples in visual sketch, and (3) timeout. It will then run the corresponding algorithm under the given condition for each benchmark in our benchmark collection, and then create a new folder named <code>exp_ALGORITHM_NUM_SAMPLES_DATETIME</code> under the folder <code>/falx-popl-snapshot/artifact/output</code> (one output for each file). On average, each run of the evaluation script takes around 3-5 hours (for all 83 benchmarks), depending on the choice of algorithm and the environment.</p>
+      <p>The evaluation script requires you to provide (1) the synthesis algorithm name, (2) the number of samples in visual sketch, and (3) timeout. It will then run the corresponding algorithm under the given condition for each benchmark in our benchmark collection, and then create a new folder named <code>exp_ALGORITHM_NUM_SAMPLES_DATETIME</code> under the folder <code>/falx-popl-snapshot/artifact/output</code> (one output for each file). On average, each run of the evaluation script takes around 3-10 hours (for all 83 benchmarks), depending on  choice of the algorithm (baselines take longer time to finish) and the environment.</p>
 
       <h3>Running Instruction for Experiment 1</h3>
 
@@ -96,12 +98,12 @@ bash full_eval.sh falx 8 600</pre>
       <p>When all of the three experiments finish, we are expected to see 3 new folders in the output directory <code>/falx-popl-snapshot/artifact/output</code>:</p>
 
       <ul> 
-        <li><code>exp_falx_4_DATETIME1</code></li>
-        <li><code>exp_falx_6_DATETIME2</code></li>
-        <li><code>exp_falx_8_DATETIME3</code></li>
+        <li><code>exp_falx_4_new</code></li>
+        <li><code>exp_falx_6_new</code></li>
+        <li><code>exp_falx_8_new</code></li>
       </ul>
 
-      <p>Note that DATETIME1, DATETIME2, DATETIME3 are the timestamps you run each experiment. Each file logs the following information of the benchmark: the input table it takes, the sample sketch used, whether the task completes, the synthesized table program / visualization script, and the time spent in finishing the synthesis task.</p>
+      <p>Each log file in a log folder corresponds to one benchmark in our dataset, and it stores the following information: the input table, the sample visual sketch, whether the task completes, the synthesized table program / visualization script, and the time spent in finishing the synthesis task. A log file may contain some error messages -- they are often errors encountered during executions of wrong synthesized programs, you can directly scroll to the bottom of the file to check the synthesis status.</p>
 
       <h3>Analyzing Logs</h3>
 
@@ -109,9 +111,9 @@ bash full_eval.sh falx 8 600</pre>
 
       <pre>
 cd /falx-popl-snapshot/artifact/output
-python plot_script_1.py exp_falx_4_DATETIME1
-python plot_script_1.py exp_falx_6_DATETIME2 
-python plot_script_1.py exp_falx_8_DATETIME3</pre>
+python plot_script_1.py exp_falx_4_new
+python plot_script_1.py exp_falx_6_new 
+python plot_script_1.py exp_falx_8_new</pre>
 
       <p>For each execution log, the analysis script will perform the following two analysis tasks:
 
@@ -136,8 +138,8 @@ LOG_DIR
 
       <p>LOG_DIR is the experiment log folder name and X1 / X2 / X3 / X4 / Y1 / Y2 / Y3 / Y4 should be numbers that are consistent with Table 1 and Table 2 in the paper:
       <ol> 
-        <li>The result of Table 1 should be consistent with the second part of the output from command <code>python plot_script_1.py exp_falx_4_DATETIME1</code></li>
-        <li>The result of Table 2 should be consistent with the first part of the outputs from the analysis scripts (<code>python plot_script_1.py exp_falx_4_DATETIME1;python plot_script_1.py exp_falx_6_DATETIME2; python plot_script_1.py exp_falx_8_DATETIME3;</code>) </li>
+        <li>The result of Table 1 should be consistent with the second part of the output from command <code>python plot_script_1.py exp_falx_4_new</code></li>
+        <li>The result of Table 2 should be consistent with the first part of the outputs from the analysis scripts (<code>python plot_script_1.py exp_falx_4_new;python plot_script_1.py exp_falx_6_new; python plot_script_1.py exp_falx_8_new;</code>) </li>
       </ol> 
     </p>
 
@@ -168,7 +170,9 @@ python plot_script_1.py exp_falx_8</pre>
 cd /falx-popl-snapshot/artifact/falx
 bash full_eval.sh none 4 600</pre>
 
-       <p>When the experiment finish, one new folder will appear in the output directory <code>/falx-popl-snapshot/artifact/output</code>, namely <code>exp_none_4_DATETIME4</code>, where <code>DATETIME4</code> is the timestamp of the experiment.</p>
+       <p>When the experiment finish, one new folder will appear in the output directory <code>/falx-popl-snapshot/artifact/output</code>, namely <code>exp_none_4_new</code>, where <code>new</code> is the timestamp of the experiment.</p>
+
+       <p><span style="font-weight: bold;text-decoration:underline;">What to do if the computer get stuck on one benchmark?</span> Sometimes, the timeout command may not successfully terminate the program after the timeout is hit. In this event, you can terminate the current evaluation run manually and re-run the evaluation script. Note that our script is made in the way such that finished benchmarks (i.e., if the corresponding log file already exists in the output directory) won't be re-run. So, you can feel free to interrupt the script in the running process if one benchmark takes too long (longer than the timeout) and re-run the script. You can even destroy the docker container and start over, it won't waste time on finished benchmarks (but it will spend extra time in building the container and setting up dependencies).</p>
 
       <h3>Running Instruction for Experiment 3</h3>
 
@@ -178,20 +182,20 @@ bash full_eval.sh none 4 600</pre>
 cd /falx-popl-snapshot/artifact/falx
 bash full_eval.sh morpheus 4 600</pre>
 
-       <p>When the experiment finish, one new folder will appear in the output directory <code>/falx-popl-snapshot/artifact/output</code>, namely <code>exp_morpheus_4_DATETIME5</code>, where <code>DATETIME5</code> is the timestamp of the experiment.</p>
+       <p>When the experiment finish, one new folder will appear in the output directory <code>/falx-popl-snapshot/artifact/output</code>, namely <code>exp_morpheus_4_new</code>, where <code>new</code> is the timestamp of the experiment.</p>
 
       <h3>Analyzing Logs</h3>
 
-      <p>First check that the three folders <code>exp_falx_4_DATETIME1</code>, <code>exp_none_4_DATETIME4</code> and <code>exp_morpheus_4_DATETIME5</code> are under the output directory <code>/falx-popl-snapshot/artifact/output</code>. If so, we are ready to use the following analysis scripts to reproduce the charts in Figure 14 in our paper.</p>
+      <p>First check that the three folders <code>exp_falx_4_new</code>, <code>exp_none_4_new</code> and <code>exp_morpheus_4_new</code> are under the output directory <code>/falx-popl-snapshot/artifact/output</code>. If so, we are ready to use the following analysis scripts to reproduce the charts in Figure 14 in our paper.</p>
 
       <pre>cd /falx-popl-snapshot/artifact/output
-python plot_script_2.py exp_falx_4_DATETIME1 exp_none_4_DATETIME4</pre>
+python plot_script_2.py exp_falx_4_new exp_none_4_new</pre>
       
       <p>Note that the output of analysis script will be a long one line string (that will be unreadable), to create the visualization, copy the output string to <a href="https://vega.github.io/editor/#/custom/vega-lite">Vega-Lite online editor</a> and view the visualization. The result of this experiment should be consistent with Figure 14(a) in the paper.</p>
 
       <p>Similarly, use the following sript to get the comparison result between falx and the morpheus variant:</p>
       <pre>cd /falx-popl-snapshot/artifact/output
-python plot_script_2.py exp_falx_4_DATETIME1 exp_morpheus_4_DATETIME5</pre>
+python plot_script_2.py exp_falx_4_new exp_morpheus_4_new</pre>
 
       <p>Copy the output string to <a href="https://vega.github.io/editor/#/custom/vega-lite">Vega-Lite online editor</a> and view the visualization. The result of this experiment should be consistent with Figure 14(b) in the paper.</p>
 
@@ -208,7 +212,52 @@ python plot_script_2.py exp_falx_4 exp_none_4_all</pre>
 python plot_script_2.py exp_falx_4 exp_morpheus_4</pre>
 
       <p>Copy output (one at a time) to <a href="https://vega.github.io/editor/#/custom/vega-lite">Vega-Lite online editor</a> to reproduce the two charts in Figure 14.</p>
+
+      <h2>Extra: Play with the Tool</h2>
+
+      <p>Last, we will play with the tool to experiment with solving new benchmarks outside of our evaluation dataset. In this section, we will use our newest version of the synthesis tool (<a href="./falx-artifact/falx-new">falx-artifact/falx-new</a>) to solve visualization by example tasks. Unlike the previous tool we used in reproducing evaluation result, this tool won't try to sample visual sketch from the full visual trace, but instead ask the user to directly provide both input table and the visual trace to the interface. Also, this new implementation is more up-to-date than the popl snapshot version, with some improvement in the synthesis algorithm implementation.</p>
       
+      <p>To use the tool, create a json file containing the input table and the visual sketch similar to the following example:</p>
+
+      <pre>
+{
+  "input_data": [
+    { "Bucket": "Bucket E", "Budgeted": 100, "Actual": 115 },
+    { "Bucket": "Bucket D", "Budgeted": 100, "Actual": 90 },
+    { "Bucket": "Bucket C", "Budgeted": 125, "Actual": 115 },
+    { "Bucket": "Bucket B", "Budgeted": 125, "Actual": 140 },
+    { "Bucket": "Bucket A", "Budgeted": 140, "Actual": 150 }
+  ],
+  "raw_trace": [
+    {"type": "bar", "props": { "x": "Actual", "y": 115,  "color": "Actual", "column": "Bucket E"}},
+    {"type": "bar", "props": { "x": "Actual", "y": 90,"color": "Actual", "column": "Bucket D"}},
+    {"type": "bar", "props": { "x": "Budgeted","y": 100,  "color": "Budgeted", "column": "Bucket D"}}
+  ]
+}</pre>
+
+      <p>In this example, the input table is a json-dict representation of an input table, where each tuple in the list represent a row in the table. Each key-value map indicates the value for the corresponding column (e.g., <code>"Bucket": "Bucket E"</code> indicates that the value of column <code>Bucket</code> in the first row is <code>Bucket E</code>). The visual sketch is a list of trace elements specifying what elements will appear on the canvas. You can refer to <a href="benchmarks.html">benchmarks page</a> to check supported grammar for the visual trace (note that some properties may not be available for some element types).</p>
+
+      <p>Besides the example above, we have created multiple basic visualization examples in <a href="falx-new/examples/">the examples folder</a>.</p>
+      
+      <h3>Run the example</h3>
+
+      <p>In order to run the example, we will first need to setup the tool using the follow command:</p>
+
+      <pre>cd /falx-popl-snapshot/falx-new
+pip3 install -e .
+</pre>
+      
+      <p>This command will install the current tool to the system path. Note that if you would like to switch back to the popl snapshot version for reproducing paper experiments, you will need to go to <code>cd /falx-popl-snapshot/falx-new</code> folder and re-install it with <code>pip3 install -e .</code> in that folder.</p>
+
+      <p>Once this is correctly set up, use the following command to run the synthesizer:</p>
+      <pre>cd /falx-popl-snapshot/falx-new/falx
+python run.py --input_file=INPUT_FILE --output_file=OUTPUT_FILE
+</pre>
+      
+      <p>The <code>INPUT_FILE</code> should be the input json file containing input table and visual sketch (e.g., the file <code>/falx-popl-snapshot/falx-new/examples/example-1.json</code>), and the <code>OUTPUT_FILE</code> is the output visualization script.</p>
+
+      <p>To visualize the synthesized visualization, copy the content in the output visualization script and paste it into <a href="https://vega.github.io/editor/#/custom/vega-lite">Vega-Lite online editor</a>. It should render the visualization for you.</p>
+
       <h2>Contact</h2>
 
       <p>We would like to receive suggestions from you about further improving the artifact. Feel free to drop us a line.</p>

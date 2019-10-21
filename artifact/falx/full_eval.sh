@@ -18,13 +18,12 @@ case "${unameOut}" in
     Linux*)     timeout_cmd=timeout;;
     Darwin*)    timeout_cmd=gtimeout;;
 esac
-echo ${timeout_cmd}
+#echo ${timeout_cmd}
 
 dt=$(date '+%Y%m%d_%H%M%S')
-output_dir="../output/exp_"$prune"_"$num_samples"_"$dt
+output_dir="../output/exp_"$prune"_"$num_samples"_new"
 
 data_list=(
-    #easy noes
     "001" "002" "003" 
     "004" "005" "006" "007" "008" "009" "010" 
     "011" "012" "013" "014" "015" "016" "017" "018" "019" "020" 
@@ -38,7 +37,6 @@ data_list=(
     "test_22" "test_23"
 )
 
-
 echo "## experiment result in: "$output_dir
 echo "## number of sample used: "$num_samples
 
@@ -47,7 +45,13 @@ echo "## number of sample used: "$num_samples
 mkdir $output_dir
 for i in "${data_list[@]}"; do
 	echo "# running benchamrk $i"
-    { time stdbuf -oL $timeout_cmd $time_limit python run.py --data_id=$i --num_samples=$num_samples --prune=$prune ; } >& "$output_dir/$i.log"
+    FILE="$output_dir/$i.log"    
+    if [ -f $FILE ]; then
+       echo "  file $FILE already exists, skip running this benchmark again (if you want to re-run this benchmark, remove the file $FILE);"
+    else
+        echo "  start at "$(date '+%m%d%Y_%H:%M:%S')
+        { time stdbuf -oL $timeout_cmd $time_limit python run.py --data_id=$i --num_samples=$num_samples --prune=$prune ; } >& "$output_dir/$i.log"
+    fi
 done
 
 
