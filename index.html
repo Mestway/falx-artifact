@@ -25,9 +25,10 @@
       <p>Our artifact contains the following materials: </p>
 
       <ul> 
-        <li> <i>Benchmarks</i> of visualization by example tasks.</li>
-        <li> <i>Implementation of the synthesis algorithm</i> (named <span style="font-weight:bold;">Falx</span>) in Python3.</li>
+        <li> <i>Benchmarks</i> of visualization by example tasks. See <a href="#benchmarks">Benchmarks</a> section.</li>
+        <li> <i>Implementation of the synthesis algorithm</i> (named <span style="font-weight:bold;">Falx</span> under the <code>artifact</code> directory) in Python3. This is our implementation used in the paper evaluation.</li>
         <li> <i>Evaluation log and analysis scripts</i> used in our paper evaluation.</li>
+        <li> <i>A new implementation of the synthesis algorithm</i> for playing purpose. See <a href="#extra">Extra: Play with the Tool</a> to learn about this new implementation.</li>
       </ul>
 
       <h2>Prerequisite</h2>
@@ -59,7 +60,7 @@ echo "install.packages(\"dplyr\", dependencies=TRUE); install.packages(\"tidyr\"
         In the following, we first present benchmarks we used in our evaluation, then show instructions to reproduce our experiments described in the paper (Section 6), and finally how to use our the tool to solve new visualization tasks. 
       </p>
 
-      <h2>Benchmarks</h2>
+      <h2 id="benchmarks">Benchmarks</h2>
 
       <p>In our AutoVis benchmarks, each visual sketch comes with an input data. Given the <span style="text-decoration: underline;">input data</span> and the <span style="text-decoration: underline;">visual sketch</span>, the goal is to create a <span style="text-decoration: underline;">visualization of the input data</span> such that all visual traces in the sketch are contained by the output visualization. We have created a separate <a href="benchmarks.html">benchmarks page</a> for navigating our benchmarks. Note that in our evaluation, we use visual traces randomly sampled from the full visual trace as the input (visual sketch) to the synthesizer as discussed in Section 6.2 in the paper. In the benchmark viewer, for each bechmark, we present one visual sketch sampled from the full trace.</p>
 
@@ -213,7 +214,7 @@ python plot_script_2.py exp_falx_4 exp_morpheus_4</pre>
 
       <p>Copy output (one at a time) to <a href="https://vega.github.io/editor/#/custom/vega-lite">Vega-Lite online editor</a> to reproduce the two charts in Figure 14.</p>
 
-      <h2>Extra: Play with the Tool</h2>
+      <h2 id="extra">Extra: Play with the Tool</h2>
 
       <p>Last, we will play with the tool to experiment with solving new benchmarks outside of our evaluation dataset. In this section, we will use our newest version of the synthesis tool (<a href="./falx-artifact/falx-new">falx-artifact/falx-new</a>) to solve visualization by example tasks. Unlike the previous tool we used in reproducing evaluation result, this tool won't try to sample visual sketch from the full visual trace, but instead ask the user to directly provide both input table and the visual trace to the interface. Also, this new implementation is more up-to-date than the popl snapshot version, with some improvement in the synthesis algorithm implementation.</p>
       
@@ -257,6 +258,12 @@ python run.py --input_file=INPUT_FILE --output_file=OUTPUT_FILE
       <p>The <code>INPUT_FILE</code> should be the input json file containing input table and visual sketch (e.g., the file <code>/falx-popl-snapshot/falx-new/examples/example-1.json</code>), and the <code>OUTPUT_FILE</code> is the output visualization script.</p>
 
       <p>To visualize the synthesized visualization, copy the content in the output visualization script and paste it into <a href="https://vega.github.io/editor/#/custom/vega-lite">Vega-Lite online editor</a>. It should render the visualization for you.</p>
+
+      <p>Below we show the example command to run  <code>example-1.json</code>:</p>
+      <pre>cd /falx-popl-snapshot/falx-new/falx
+python run.py --input_file=/falx-popl-snapshot/falx-new/examples/example-1.json --output_file=/falx-popl-snapshot/falx-new/examples/example-1-output.json
+</pre>
+      <p>You can then copy the content in <code>/falx-popl-snapshot/falx-new/examples/example-1-output.json</code> to <a href="https://vega.github.io/editor/#/custom/vega-lite">Vega-Lite online editor</a> to view the synthesized visualization.</p>
 
       <h2>Contact</h2>
 
