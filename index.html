@@ -35,21 +35,22 @@
 
       <p>Our experiments run in Docker, instructions to install Docker can be found <a href="https://docs.docker.com/install/">here</a>.</p>
 
-      <p>After the docker is install, run the following command to create and enter the Docker container that would be used for artifat evaluation. This command will download the docker image, build the docker container, and finally enter the docker container.</p>
+      <p>After the docker is install, run the following command to create and enter the Docker container that would be used for artifat evaluation. This command will download the docker image (this step takes around 20 minutes), build the docker container, and finally enter the docker container.</p>
 
       <pre>sh ./init_docker.sh</pre>
 
-      <p>Once in the docker, run the following commands to install dependencies. These commands install python dependencies of our tool, and configure the R environment that is needed to interpret table transformation programs. Note that configuring R environments can take a while (up to 20 minutes).</p>
+      <p>Once in the docker, run the following commands to install dependencies. These commands install python dependencies of our tool as well as setting the tool as a Python library itself.</p>
 
       <pre>cd /falx-popl-snapshot/artifact
 pip3 install -r requirements.txt
-pip3 install -e .
-echo "install.packages(\"dplyr\", dependencies=TRUE); install.packages(\"tidyr\", dependencies=TRUE);install.packages(\"jsonlite\", dependencies=TRUE);install.packages(\"compare\", dependencies=TRUE)" | R --save</pre>
+pip3 install -e .</pre>
 
       <div style="background: lightyellow; padding: 10px 20px 0px 20px;">
-        <p><span style="font-weight: bold;text-decoration:underline;">How to start over?</span> In a rare event that your docker building process get broken or you want to destroy your docker container and start over, you can (1) delete the docker container using command <code>docker rm falx-artifact</code> and (2) delete the the docker image (with command <code>docker rmi falx-artifact-img</code>), and then start over from the first step using <code>sh ./init_docker.sh</code>.
+        <p><span style="font-weight: bold;text-decoration:underline;">How to start over?</span> In an event that your docker building process get broken or you want to destroy your docker container and start over, you can delete the docker container using command <code>docker rm falx-artifact</code>, and then start over from the first step using <code>sh ./init_docker.sh</code>.
         </p>
         <p style="text-decoration: underline;">Make sure you re-run scripts to re-install all dependencies again after you rebuild the docker container.</p>
+
+        <p>In a extremely rare event that that you want to destroy the docker image and strat over: use command <code>docker rmi falx-artifact-img</code> and then start again using <code>sh ./init_docker.sh</code>. However, we do not recommend this since re-dowloading the docker image would take quite a while to finish.</p>
       </div>
 
       <h2>Overview</h2>
@@ -268,7 +269,9 @@ python run.py --input_file=INPUT_FILE --output_file=OUTPUT_FILE
       <p>To visualize the synthesized visualization, copy the content in the output visualization script and paste it into <a href="https://vega.github.io/editor/#/custom/vega-lite">Vega-Lite online editor</a>. It should render the visualization for you.</p>
 
       <p><span style="font-weight: bold">Example</span> Below we show the example command to run  <code>example-1.json</code>:</p>
-      <pre>cd /falx-popl-snapshot/falx-new/falx
+      <pre>cd /falx-popl-snapshot/falx-new
+pip3 install -e .
+cd /falx-popl-snapshot/falx-new/falx
 python run.py --input_file=/falx-popl-snapshot/falx-new/examples/example-1.json --output_file=/falx-popl-snapshot/falx-new/examples/example-1-output.json
 </pre>
       <p>You can then copy the content in <code>/falx-popl-snapshot/falx-new/examples/example-1-output.json</code> to <a href="https://vega.github.io/editor/#/custom/vega-lite">Vega-Lite online editor</a> to view the synthesized visualization.</p>

@@ -60,4 +60,6 @@ RUN apt-get update \
  	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds \
  	&& rm -rf /var/lib/apt/lists/*
 
+RUN echo "install.packages(\"dplyr\", dependencies=TRUE); install.packages(\"tidyr\", dependencies=TRUE);install.packages(\"jsonlite\", dependencies=TRUE);install.packages(\"compare\", dependencies=TRUE)" | R --save
+
 CMD ["bash"]
