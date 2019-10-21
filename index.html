@@ -135,8 +135,8 @@ python plot_script_1.py exp_falx_4 exp_falx_6 exp_falx_8
       <p>We will run a set of experiments for the standard falx algorithm that we have already run in Experiment 1, and a variation of the falx algorithm without synthesis decomposition (by setting ALGORITHM to <code>none</code>). Both experiments use <code>SAMPLE_SIZE=4</code> and <code>TIMEOUT=600</code> (seconds). Since we already have the result of runnig falx algorithhm with <code>SAMPLE_SIZE=4</code> and <code>TIMEOUT=600</code>, we only need to run one extra experiment using the following command:
 
       <pre>
-cd /falx-popl-snapshot/falx;
-bash full_eval.sh none 4 600;</pre>
+cd /falx-popl-snapshot/artifact/falx
+bash full_eval.sh none 4 600</pre>
 
        <p>When the experiment finish, one new folder will appear in the output directory <code>/falx-popl-snapshot/output</code>, namely <code>exp_none_4_DATETIME4</code>, where <code>DATETIME4</code> is the timestamp of the experiment.</p>
 
@@ -145,7 +145,7 @@ bash full_eval.sh none 4 600;</pre>
       <p>We will run a set of experiments for the standard falx algorithm that we have already run in Experiment 1, and a modified falx synthesizer with the table synthesis algorithm replaced by the morepheus algorithm (by setting ALGORITHM to <code>morpheus</code>). Both cases use <code>SAMPLE_SIZE=4</code> and <code>TIMEOUT=600</code> seconds. Since we already have the result of runnig falx algorithhm with <code>SAMPLE_SIZE=4</code> and <code>TIMEOUT=600</code>, we only need to run one extra experiment using the following command:
 
       <pre>
-cd /falx-popl-snapshot/falx;
+cd /falx-popl-snapshot/artifact/falx;
 bash full_eval.sh morpheus 4 600;</pre>
 
        <p>When the experiment finish, one new folder will appear in the output directory <code>/falx-popl-snapshot/output</code>, namely <code>exp_morpheus_4_DATETIME5</code>, where <code>DATETIME5</code> is the timestamp of the experiment.</p>
