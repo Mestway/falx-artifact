@@ -1,0 +1,13 @@
+{
+    "input_data": [
+      { "Quarter": "Quarter1", "Number of Units": 23, "Actual Profits": 3358 },
+      { "Quarter": "Quarter2", "Number of Units": 27, "Actual Profits": 3829 },
+      { "Quarter": "Quarter3", "Number of Units": 15, "Actual Profits": 2374 },
+      { "Quarter": "Quarter4", "Number of Units": 43, "Actual Profits": 3373 }
+    ],
+    "raw_trace": [
+      {"type": "bar", "props": { "x": "Quarter1", "y": 23}},
+      {"type": "bar", "props": { "x": "Quarter2", "y": 27}},
+      {"type": "line", "props": {"x1": "Quarter1", "y1": 3358, "x2": "Quarter2", "y2": 3829}}
+    ]
+  }
