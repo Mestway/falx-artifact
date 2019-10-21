@@ -13,10 +13,6 @@ echo "  algorithm: "$prune
 echo "  num_samples: "$num_samples 
 echo "  time_limit: "$time_limit
 
-exit 0
-
-### don't edit 
-
 unameOut="$(uname -s)"
 case "${unameOut}" in
     Linux*)     timeout_cmd=timeout;;

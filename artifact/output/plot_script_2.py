@@ -4,6 +4,7 @@ import os
 import pandas as pd
 from pprint import pprint
 import numpy as np
+from vega import VegaLite
 import sys
 
 # default directories
@@ -48,15 +49,13 @@ def read_log_result_list(log_dir_list, titles=None):
                 all_result.append(status)
     all_result.sort(key=lambda x:x["time"])
     return all_result
-    
 
-def plot_solving_time(log_dir):
-    log_dir_list = [log_dir]
+def plot_solving_time(log_dir_list):
     titiles = log_dir_list
     all_result = read_log_result_list(log_dir_list, titiles)
     
     plot_data = []
-    for i in [1, 10, 60, 600]:
+    for i in np.linspace(0.01, MAX_TIME, 1000):
         cnt = {}
         for r in all_result:
             if r["exp_id"] not in cnt:
@@ -66,34 +65,22 @@ def plot_solving_time(log_dir):
         for exp_id in cnt:
             plot_data.append({"time": i, "cnt": cnt[exp_id], "exp_id": exp_id })
     
-    print("{}".format(log_dir))
-    for d in plot_data:
-        print("  # caes solved within {} second(s): {}".format(d["time"], d["cnt"]))
-
-
-def plot_num_candidates(log_dir):
-
-    log_dir_list = [log_dir]
-    titles = [log_dir]
-
-    all_result = read_log_result_list(log_dir_list, titles)
-    df = pd.DataFrame.from_dict(all_result)
-    df = df[df["solved"] == True]
     
-    for t in titles:
-        cases_solved_within_top_5 = []
-        print("{}".format(t))
-        dft = df[df["exp_id"]==t]
-        #print("# cases solved within top 5:")
-        #print(list(dft[dft["num_explored"] <= 5]["data_id"]))
-        print("  # cases solved solved within top 1: {}".format(len(dft[dft["num_explored"] <= 1])))
-        print("  # cases solved solved within top 3: {}".format(len(dft[dft["num_explored"] <= 3])))
-        print("  # cases solved solved within top 5: {}".format(len(dft[dft["num_explored"] <= 5])))
-        print("  # cases solved within time limit:   {}".format(len(dft)))
+    cdf_data = pd.DataFrame.from_dict(plot_data)
+    chart2 = {
+        "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+        "mark": {"type": "line"},
+        "encoding": {
+            "y": {"field": "cnt", "type": "quantitative", "title": "# of solved benchmarks", "scale": {"domain": [0,83]}},
+            "x": { "field": "time", "type": "quantitative", "title": "Time (s)"},# "scale": {"type": "log", "base": 10}},
+            "color": {"field": "exp_id", "type": "nominal"},
+            "order": {"field": "time"}
+        }
+    }
+    chart2["data"] = { "values": plot_data }
+    print(json.dumps(chart2))
 
 if __name__ == '__main__':
-
-    # python plot_script_1.py exp_falx_4 exp_falx_6 exp_falx_8 
+    # python plot_script_2.py exp_falx_4 exp_morpheus_4 
     num_arguments = len(sys.argv) - 1
-    plot_num_candidates(sys.argv[1])
-    plot_solving_time(sys.argv[1])
+    plot_solving_time(sys.argv[1:])
