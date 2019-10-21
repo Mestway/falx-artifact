@@ -63,23 +63,23 @@ echo "install.packages(\"dplyr\", dependencies=TRUE); install.packages(\"tidyr\"
 
       <h2>Experiment 1</h2>
 
-      <p> The fist set of experiments (Section 6.2) involve running our synthesis algorithm with different sizes of visual sketch to evaluate (1) the number of benchmarks can be sovled at different timeout and (2) the impact of size of visual sketch on the ranking. In the following, we show instructions to produce the result in Table 1 and Table 2 of our paper.
+      <p> The first set of experiments (Section 6.2) involve running our synthesis algorithm with different sizes of visual sketch to evaluate (1) the number of benchmarks can be sovled at different timeout and (2) the impact of visual sketch size on the ranking. In the following, we show instructions to produce the result in Table 1 and Table 2 of our paper.
       </p>
 
       <h3>General Running Instruction</h3>
 
-      <p>To run the visualization by example experiment, first make sure you have a directory named <code>output</code> under the folder <code>falx-popl-snapshot</code> to store evaluation logs (it should come with the artifact). Then, proceed to the folder <code>/falx-popl-snapshot/artifact/falx</code> and run the evaluation scriopt as follows: </p>
+      <p>To run the visualization by example experiment, first make sure you have a directory named <code>output</code> under the folder <code>falx-popl-snapshot</code> to store evaluation logs (it should come with the artifact). Then, run the evaluation script as follows: </p>
 
       <pre>
 cd /falx-popl-snapshot/artifact/falx
 bash full_eval.sh ALGORITHM NUM_SAMPLES TIMEOUT</pre>
 
-      <p>The evaluation script requires you to provide (1) the synthesis algorithm name, (2) the number of samples in visual sketch, and (3) timeout. It will then run the corresponding algorithm under the given condition for each benchmark in our benchmark collection, and then create a new folder named <code>exp_ALGORITHM_NUM_SAMPLES_DATETIME</code> under the folder <code>/falx-popl-snapshot/output</code> (one output for each file). On average, each run of the evaluation script takes around 3-5 hours, depending on the choice of algorithm and the environment.</p>
+      <p>The evaluation script requires you to provide (1) the synthesis algorithm name, (2) the number of samples in visual sketch, and (3) timeout. It will then run the corresponding algorithm under the given condition for each benchmark in our benchmark collection, and then create a new folder named <code>exp_ALGORITHM_NUM_SAMPLES_DATETIME</code> under the folder <code>/falx-popl-snapshot/artifact/output</code> (one output for each file). On average, each run of the evaluation script takes around 3-5 hours (for all 83 benchmarks), depending on the choice of algorithm and the environment.</p>
 
       <h3>Running Instruction for Experiment 1</h3>
 
-      <p>As mentioned in the begining of this section, we will run a set of experiments for the <span style="text-decoration: underline">falx</span>
-        synthesis algorithm (our new bidirectional synthesis algorithm) with different sizes of visual sketch (i.e., different <code>$NUM_SAMPLES=4, 6, 8</code>) under 600 seconds timeout. To do so, we will run the following set of commands:</p> 
+      <p>As mentioned in the begining of this section, we first run a set of experiments for the falx
+        synthesis algorithm (our new bidirectional synthesis algorithm) with different visual sketch sample sizes (i.e., <code>NUM_SAMPLES=4, 6, 8</code>) under 600 seconds timeout. To do so, we will run the following set of commands:</p> 
 
       <pre>
 cd /falx-popl-snapshot/artifact/falx
@@ -93,7 +93,7 @@ bash full_eval.sh falx 6 600</pre>
 cd /falx-popl-snapshot/artifact/falx
 bash full_eval.sh falx 8 600</pre>
 
-      <p>When all of the three experiments finish, we are expected to see 3 new folders in the output directory <code>/falx-popl-snapshot/output</code>:</p>
+      <p>When all of the three experiments finish, we are expected to see 3 new folders in the output directory <code>/falx-popl-snapshot/artifact/output</code>:</p>
 
       <ul> 
         <li><code>exp_falx_4_DATETIME1</code></li>
@@ -113,21 +113,21 @@ python plot_script_1.py exp_falx_4_DATETIME1
 python plot_script_1.py exp_falx_6_DATETIME2 
 python plot_script_1.py exp_falx_8_DATETIME3</pre>
 
-      <p>For each execution log, the analysis script will perform the following two analysis tasks.
+      <p>For each execution log, the analysis script will perform the following two analysis tasks:
 
       <ol> 
-        <li>It counts the number of cases such that the correct solution is ranked among top-1, top-5, top-10 of synthesized solutions as well as the total number of benchmarks solved by the synthesizer</li>
-        <li>the numbers of cases that can be solved within 1 / 10 / 60 / 600 seconds by the synthesizer</li>
+        <li>it counts the number of cases such that the correct solution is ranked among top-1, top-5, top-10 of synthesized solutions as well as the total number of benchmarks solved by the synthesizer</li>
+        <li>it counts the numbers of cases that can be solved within 1 / 10 / 60 / 600 seconds by the synthesizer</li>
       </ol> 
 
       The output should be of the following format:</p>
 
       <pre>
 LOG_DIR
-  # cases solved solved within top 1: X1
-  # cases solved solved within top 5: X2
+  # cases solved solved within top 1:  X1
+  # cases solved solved within top 5:  X2
   # cases solved solved within top 10: X3
-  # cases solved within time limit:   X4
+  # cases solved within time limit:    X4
 ---
   # caes solved within 1 second(s): Y1
   # caes solved within 10 second(s): Y2
@@ -136,16 +136,16 @@ LOG_DIR
 
       <p>LOG_DIR is the experiment log folder name and X1 / X2 / X3 / X4 / Y1 / Y2 / Y3 / Y4 should be numbers that are consistent with Table 1 and Table 2 in the paper:
       <ol> 
-        <li>The result of Table 1 should be included in the output of <code>python plot_script_1.py exp_falx_4_DATETIME1</code></li>
-        <li>The result of Table 2 are presented in the first parts of the outputs from the analysis script </li>
+        <li>The result of Table 1 should be consistent with the second part of the output from command <code>python plot_script_1.py exp_falx_4_DATETIME1</code></li>
+        <li>The result of Table 2 should be consistent with the first part of the outputs from the analysis scripts (<code>python plot_script_1.py exp_falx_4_DATETIME1;python plot_script_1.py exp_falx_6_DATETIME2; python plot_script_1.py exp_falx_8_DATETIME3;</code>) </li>
       </ol> 
     </p>
 
       <h3>Remarks</h3>
 
-      <p>The exact numbers in the result table may be different from ones reported in the paper due to the running platform difference. However, the number of benchmarks solved within each time limit should be consistent with those reported in the paper. If there are several benchmarks not solvable within 600 seconds timeout, you can increase the time limit a bit to retry that benchmark.</p>
+      <p>>Note that our experiment in the paper was run on a 2.7 GHz Quad-Core Intel Core i7 processor with 16G memory. The exact numbers in the result table may be different from ones reported in the paper due to the running platform difference. However, the number of benchmarks solved within each time limit should be consistent with those reported in the paper. If there are several benchmarks not solvable within 600 seconds timeout, you can increase the time limit a bit to retry on failed benchmarks.</p>
 
-      <p>We also provide raw logs generated during our evaluation in the <code>output</code> directory. We can run the analysis script to obtain the tables in the paper using the command shown in the last subsection, using the following commands:</p>
+      <p>We also provide raw logs produced by our experiment run for paper submission in the <code>output</code> directory. We can run the following analysis script to obtain the tables in the paper:</p>
 
       <pre>
 cd /falx-popl-snapshot/artifact/output
@@ -168,7 +168,7 @@ python plot_script_1.py exp_falx_8</pre>
 cd /falx-popl-snapshot/artifact/falx
 bash full_eval.sh none 4 600</pre>
 
-       <p>When the experiment finish, one new folder will appear in the output directory <code>/falx-popl-snapshot/output</code>, namely <code>exp_none_4_DATETIME4</code>, where <code>DATETIME4</code> is the timestamp of the experiment.</p>
+       <p>When the experiment finish, one new folder will appear in the output directory <code>/falx-popl-snapshot/artifact/output</code>, namely <code>exp_none_4_DATETIME4</code>, where <code>DATETIME4</code> is the timestamp of the experiment.</p>
 
       <h3>Running Instruction for Experiment 3</h3>
 
@@ -178,11 +178,11 @@ bash full_eval.sh none 4 600</pre>
 cd /falx-popl-snapshot/artifact/falx
 bash full_eval.sh morpheus 4 600</pre>
 
-       <p>When the experiment finish, one new folder will appear in the output directory <code>/falx-popl-snapshot/output</code>, namely <code>exp_morpheus_4_DATETIME5</code>, where <code>DATETIME5</code> is the timestamp of the experiment.</p>
+       <p>When the experiment finish, one new folder will appear in the output directory <code>/falx-popl-snapshot/artifact/output</code>, namely <code>exp_morpheus_4_DATETIME5</code>, where <code>DATETIME5</code> is the timestamp of the experiment.</p>
 
       <h3>Analyzing Logs</h3>
 
-      <p>First check that the three folders <code>exp_falx_4_DATETIME1</code>, <code>exp_none_4_DATETIME4</code> and <code>exp_morpheus_4_DATETIME5</code> are under the output directory <code>/falx-popl-snapshot/output</code>. If so, we are ready to use the following analysis scripts to reproduce the charts in Figure 14 in our paper.</p>
+      <p>First check that the three folders <code>exp_falx_4_DATETIME1</code>, <code>exp_none_4_DATETIME4</code> and <code>exp_morpheus_4_DATETIME5</code> are under the output directory <code>/falx-popl-snapshot/artifact/output</code>. If so, we are ready to use the following analysis scripts to reproduce the charts in Figure 14 in our paper.</p>
 
       <pre>cd /falx-popl-snapshot/artifact/output
 python plot_script_2.py exp_falx_4_DATETIME1 exp_none_4_DATETIME4</pre>
@@ -194,6 +194,8 @@ python plot_script_2.py exp_falx_4_DATETIME1 exp_none_4_DATETIME4</pre>
 python plot_script_2.py exp_falx_4_DATETIME1 exp_morpheus_4_DATETIME5</pre>
 
       <p>Copy the output string to <a href="https://vega.github.io/editor/#/custom/vega-lite">Vega-Lite online editor</a> and view the visualization. The result of this experiment should be consistent with Figure 14(b) in the paper.</p>
+
+      <h3>Remarks</h3>
 
       <p>Note that our experiment in the paper was run on a 2.7 GHz Quad-Core Intel Core i7 processor with 16G memory. If running on a different processor, the absolute time spent in solving each benchmark may vary. However, the relative solving time should be consistent with Figure 14, even when running on a different processer.</p>
 
