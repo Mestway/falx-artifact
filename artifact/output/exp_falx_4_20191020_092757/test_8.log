@@ -1,0 +1,47 @@
+R[write to console]: 
+Attaching package: ‘dplyr’
+
+
+R[write to console]: The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+
+R[write to console]: The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+[info] Parsing spec ...
+[info] Parsing succeeded
+[info] Building synthesizer ...
+[info] Synthesizing programs ...
+[info] Solution not found!
+[info] Synthesizing programs ...
+[info] # candidates before getting the correct solution: 0
+[info] Solution found: [mutate(@param0, -, 3, 2), unite(mutate(@param0, -, 3, 2), 2, 3)]
+====> run synthesize test_8.json
+# num samples per layer: 4
+        id  ageFrom  ageTo    qt
+1  valore1      0.0   10.0   5.0
+2  valore2     10.0   15.0  12.0
+3  valore3     15.0   30.0  74.0
+4  valore4     30.0   40.0  12.0
+5  valore5     40.0   99.0   8.0
+6  valore6     99.0  120.0  15.0
+      c_x   c_y  c_color
+1   15_30  74.0     15.0
+2   30_40  12.0     10.0
+3   40_99   8.0     59.0
+4  99_120  15.0     21.0
+# candidates before getting the correct solution: 0
+## synthesize result for task test_8.json
+# table_prog:
+  [mutate(@param0, -, 3, 2), unite(mutate(@param0, -, 3, 2), 2, 3)]
+# vis_spec:
+    {'mark': 'bar', 'encoding': {'x': {'field': 'COL862', 'type': 'nominal'}, 'y': {'field': 'qt', 'type': 'quantitative'}, 'color': {'field': 'mutate_a', 'type': 'nominal'}}}
+# time used (s): 10.1234
+
+real	0m11.557s
+user	0m11.080s
+sys	0m0.260s

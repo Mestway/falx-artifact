@@ -1,0 +1,52 @@
+R[write to console]: 
+Attaching package: ‘dplyr’
+
+
+R[write to console]: The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+
+R[write to console]: The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+[info] Parsing spec ...
+[info] Parsing succeeded
+[info] Building synthesizer ...
+[info] Synthesizing programs ...
+[info] # candidates before getting the correct solution: 0
+[info] Solution found: [gatherNeg(@param0, ['-3'])]
+====> run synthesize 042.json
+# num samples per layer: 4
+         var0      var1        date
+1    100.0000  150.0000  2002-01-01
+2     87.6560  158.5030  2002-02-01
+3     78.7880  153.6914  2002-03-01
+4     64.8441  154.0754  2002-04-01
+5     83.3027  146.8448  2002-05-01
+..        ...       ...         ...
+96   212.8954  167.6651  2009-12-01
+97   196.6905  157.8813  2010-01-01
+98   183.1729  162.9670  2010-02-01
+99   178.0592  159.8805  2010-03-01
+100  175.4985  159.3445  2010-04-01
+
+[100 rows x 3 columns]
+  c_color         c_x       c_y
+1    var1  2006-12-01  153.1004
+2    var0  2004-11-01  222.2574
+3    var1  2008-02-01  193.3717
+4    var0  2004-08-01  194.2964
+# candidates before getting the correct solution: 0
+## synthesize result for task 042.json
+# table_prog:
+  [gatherNeg(@param0, ['-3'])]
+# vis_spec:
+    {'mark': 'line', 'encoding': {'x': {'field': 'date', 'type': 'nominal'}, 'y': {'field': 'VALUE', 'type': 'quantitative'}, 'color': {'field': 'KEY', 'type': 'nominal'}, 'order': {'field': 'date', 'type': 'quantitative'}}}
+# time used (s): 0.4479
+
+real	0m2.046s
+user	0m1.620s
+sys	0m0.340s

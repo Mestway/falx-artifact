@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <title>Falx</title>
+  <title>Falx Artifact</title>
 
   <link rel="stylesheet" href="static/index.css">
   <link rel="stylesheet" href="static/github-light.css">
@@ -40,12 +40,12 @@
 
       <p>Once in the docker, run the following commands to install dependencies. These commands install python dependencies of our tool, and configure the R environment that is needed to interpret table transformation programs. Note that configuring R environments can take a while (up to 20 minutes).</p>
 
-      <pre>cd /falx-popl-snapshot
+      <pre>cd /falx-popl-snapshot/artifact
 pip3 install -r requirements
 pip3 install -e .
 echo "install.packages(\"dplyr\", dependencies=TRUE); install.packages(\"tidyr\", dependencies=TRUE);install.packages(\"jsonlite\", dependencies=TRUE);install.packages(\"compare\", dependencies=TRUE)" | R --save</pre>
 
-      <p>In a rare event that your docker installation process terminates during building containers, you can (1) delete the docker container (using command <code>docker rm DOCKER_CONTAINER_ID</code>, where <code>DOCKER_CONTAINER_ID</code> can be looked up with command <code>docker ps -a</code>) and (2) delete the the docker image (with command <code>docker rmi falx-artifact-img</code>), and then restart from the first step.</p>
+      <p>In a rare event that your docker building process get broken, you can (1) delete the docker container using command <code>docker rm CONTAINER_ID</code>, where <code>CONTAINER_ID</code> of the docker you just built can be looked up with command <code>docker ps -a</code>  (look for the container built from an image named <code>falx-artifact-img</code>) and (2) delete the the docker image (with command <code>docker rmi falx-artifact-img</code>), and then start over from the first step.</p>
 
       <h2>Overview</h2>
 
@@ -73,8 +73,8 @@ echo "install.packages(\"dplyr\", dependencies=TRUE); install.packages(\"tidyr\"
       <p>To run the symbolic reasoning tool on a dataset, first make sure you have a directory named <code>output</code> under the folder <code>falx-popl-snapshot</code> to store evaluation logs (it should come with the artifact). Then, proceed to the folder <code>falx-popl-snapshot/falx</code> and run the evaluation scriopt as follows: </p>
 
       <pre>
-cd /falx-popl-snapshot/falx;
-bash full_eval.sh ALGORITHM NUM_SAMPLES TIMEOUT;</pre>
+cd /falx-popl-snapshot/artifact/falx
+bash full_eval.sh ALGORITHM NUM_SAMPLES TIMEOUT</pre>
 
       <p>The evaluation script requires you to provide (1) the synthesis algorithm name, (2) the number of samples in visual sketch, and (3) timeout. It will then run the corresponding algorithm under the given condition for each benchmark in our benchmark collection, and then create a new folder named <code>exp_ALGORITHM_NUM_SAMPLES_DATETIME</code> under the folder <code>/falx-popl-snapshot/output</code> (one output for each file). On average, each run of the evaluation script takes around 3-5 hours, depending on the choice of algorithm and the environment.</p>
 
@@ -84,16 +84,16 @@ bash full_eval.sh ALGORITHM NUM_SAMPLES TIMEOUT;</pre>
         synthesis algorithm (our new bidirectional synthesis algorithm) with different sizes of visual sketch (i.e., different <code>$NUM_SAMPLES=4, 6, 8</code>) under 600 seconds timeout. To do so, we will run the following set of commands:</p> 
 
       <pre>
-cd /falx-popl-snapshot/falx;
-bash full_eval.sh falx 4 600;</pre>
+cd /falx-popl-snapshot/artifact/falx
+bash full_eval.sh falx 4 600</pre>
 
       <pre>
-cd /falx-popl-snapshot/falx;
-bash full_eval.sh falx 6 600;</pre>
+cd /falx-popl-snapshot/artifact/falx
+bash full_eval.sh falx 6 600</pre>
 
       <pre>
-cd /falx-popl-snapshot/falx;
-bash full_eval.sh falx 8 600;</pre>
+cd /falx-popl-snapshot/artifact/falx
+bash full_eval.sh falx 8 600</pre>
 
       <p>When all of the three experiments finish, we are expected to see 3 new folders in the output directory <code>/falx-popl-snapshot/output</code>:</p>
 
@@ -107,7 +107,12 @@ bash full_eval.sh falx 8 600;</pre>
 
       <h5>Analyzing Logs</h5>
 
-      <p>After obtaining evaluation logs, we can run the analysis script to obtain the evaluation results reported in the paper (Table 1 and Table 2 in Section 6).</p>
+      <p>After obtaining evaluation logs, we can run the analysis script to obtain the evaluation results reported in the paper (Table 1 and Table 2 in Section 6). Use the following command to run the analysis script:</p>
+
+      <pre>
+cd /falx-popl-snapshot/artifact/output
+python plot_script_1.py exp_falx_4 exp_falx_6 exp_falx_8
+      </pre>
 
 
       <h3>Remarks</h3>

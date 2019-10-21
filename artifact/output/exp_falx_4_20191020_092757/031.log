@@ -1,0 +1,52 @@
+R[write to console]: 
+Attaching package: ‘dplyr’
+
+
+R[write to console]: The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+
+R[write to console]: The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+[info] Parsing spec ...
+[info] Parsing succeeded
+[info] Building synthesizer ...
+[info] Synthesizing programs ...
+[info] # candidates before getting the correct solution: 2
+[info] Solution found: [gather(@param0, ['1'])]
+====> run synthesize 031.json
+# num samples per layer: 4
+      Emp Num       Performance Rating  ... Ratings X  Total Increase
+1     11505.0   Successful Performance  ...    46.098            #N/A
+2     11529.0   Successful Performance  ...    46.329            1644
+3     11537.0  Outstanding Performance  ...    49.389            #N/A
+4     11538.0              Not Meeting  ...    40.844            #N/A
+5     11539.0            Achieved Most  ...    43.528            #N/A
+...       ...                      ...  ...       ...             ...
+3682  53633.0   Successful Performance  ...    65.761            1256
+3683  53644.0   Successful Performance  ...    45.969             527
+3684  53657.0   Successful Performance  ...    65.743            1621
+3685  53659.0            Achieved Most  ...    63.781            #N/A
+3686  53669.0   Successful Performance  ...    66.900            #N/A
+
+[3686 rows x 9 columns]
+                       c_x     c_y                  c_color     c_column
+1   Successful Performance  1279.0   Successful Performance  Development
+2            Achieved Most     0.0            Achieved Most           HR
+3  Outstanding Performance  5960.0  Outstanding Performance   Operations
+4   Successful Performance   612.0   Successful Performance      Support
+# candidates before getting the correct solution: 2
+## synthesize result for task 031.json
+# table_prog:
+  [gather(@param0, ['1'])]
+# vis_spec:
+    {'mark': 'point', 'encoding': {'x': {'field': 'Performance Rating', 'type': 'nominal'}, 'y': {'field': 'Salary Increase $', 'type': 'quantitative'}, 'color': {'field': 'Performance Rating', 'type': 'nominal'}, 'column': {'field': 'Group Name', 'type': 'nominal'}}}
+# time used (s): 17.5441
+
+real	0m19.155s
+user	0m18.590s
+sys	0m0.330s

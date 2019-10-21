@@ -1,0 +1,49 @@
+R[write to console]: 
+Attaching package: ‘dplyr’
+
+
+R[write to console]: The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+
+R[write to console]: The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+[info] Parsing spec ...
+[info] Parsing succeeded
+[info] Building synthesizer ...
+[info] Synthesizing programs ...
+[info] Solution not found!
+[info] Synthesizing programs ...
+[info] # candidates before getting the correct solution: 4
+[info] Solution found: [filter(@param0, !=, 1, Total Result), gatherNeg(filter(@param0, !=, 1, Total Result), ['-1', '-5'])]
+====> run synthesize 021.json
+# num samples per layer: 4
+          Country    Beans  Broccoli   Carrots  Total Result
+1       Australia  14433.0   17953.0    8106.0       40492.0
+2          Canada      0.0   12407.0       0.0       12407.0
+3          France    680.0    5341.0    9104.0       15125.0
+4         Germany  29905.0   37197.0   21636.0       88738.0
+5     New Zealand      0.0    4390.0       0.0        4390.0
+6  United Kingdom   5100.0   38436.0   41815.0       85351.0
+7   United States   7163.0   26715.0   56284.0       90162.0
+8    Total Result  57281.0  142439.0  136945.0      336665.0
+        c_x      c_y       c_column
+1     Beans      0.0         Canada
+2  Broccoli  26715.0  United States
+3   Carrots   9104.0         France
+4   Carrots      0.0         Canada
+# candidates before getting the correct solution: 4
+## synthesize result for task 021.json
+# table_prog:
+  [filter(@param0, !=, 1, Total Result), gatherNeg(filter(@param0, !=, 1, Total Result), ['-1', '-5'])]
+# vis_spec:
+    {'mark': 'bar', 'encoding': {'x': {'field': 'KEY', 'type': 'nominal', 'sort': None}, 'y': {'field': 'VALUE', 'type': 'quantitative'}, 'column': {'field': 'Country', 'type': 'nominal'}}}
+# time used (s): 4.2294
+
+real	0m5.793s
+user	0m5.290s
+sys	0m0.260s

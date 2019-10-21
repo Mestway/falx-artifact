@@ -1,0 +1,44 @@
+R[write to console]: 
+Attaching package: ‘dplyr’
+
+
+R[write to console]: The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+
+R[write to console]: The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+[info] Parsing spec ...
+[info] Parsing succeeded
+[info] Building synthesizer ...
+[info] Synthesizing programs ...
+[info] Solution not found!
+[info] Synthesizing programs ...
+[info] # candidates before getting the correct solution: 0
+[info] Solution found: [gatherNeg(@param0, ['-1', '-2']), cumsum(gatherNeg(@param0, ['-1', '-2']), 4)]
+====> run synthesize test_11.json
+# num samples per layer: 4
+     Group  Venditor  2010-1  2010-2  ...  2011-2  2011-3  2011-4  2012-1
+1  Group_1  Vendor_1   813.0   194.0  ...   322.0   326.0   567.0   333.0
+
+[1 rows x 11 columns]
+      c_x     c_y
+1  2010-2  1007.0
+2  2010-4  2663.0
+3  2011-2  3825.0
+4  2011-4  4718.0
+# candidates before getting the correct solution: 0
+## synthesize result for task test_11.json
+# table_prog:
+  [gatherNeg(@param0, ['-1', '-2']), cumsum(gatherNeg(@param0, ['-1', '-2']), 4)]
+# vis_spec:
+    {'mark': 'line', 'encoding': {'x': {'field': 'KEY', 'type': 'nominal'}, 'y': {'field': 'cumsum', 'type': 'quantitative'}, 'order': {'field': 'KEY', 'type': 'quantitative'}}}
+# time used (s): 17.8443
+
+real	0m19.285s
+user	0m18.910s
+sys	0m0.380s

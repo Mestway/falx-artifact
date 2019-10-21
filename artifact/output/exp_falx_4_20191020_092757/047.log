@@ -1,0 +1,49 @@
+R[write to console]: 
+Attaching package: ‘dplyr’
+
+
+R[write to console]: The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+
+R[write to console]: The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+[info] Parsing spec ...
+[info] Parsing succeeded
+[info] Building synthesizer ...
+[info] Synthesizing programs ...
+[info] Solution not found!
+[info] Synthesizing programs ...
+[info] # candidates before getting the correct solution: 14
+[info] Solution found: [mutate(@param0, -, 2, 3), gatherNeg(mutate(@param0, -, 2, 3), ['-1', '-2', '-5'])]
+====> run synthesize 047.json
+# num samples per layer: 4
+    label  total   ok
+1  Label1    1.0  0.0
+2  Label2    1.0  0.5
+3  Label3    1.0  0.4
+4  Label4    1.0  0.9
+5  Label5    1.0  0.4
+6  Label6    1.0  0.9
+7  Label7    1.0  0.8
+8  Label8    1.0  0.8
+      c_x  c_y   c_color
+1  Label1  1.0  mutate_a
+2  Label6  0.9        ok
+3  Label3  0.4        ok
+4  Label4  0.9        ok
+# candidates before getting the correct solution: 14
+## synthesize result for task 047.json
+# table_prog:
+  [mutate(@param0, -, 2, 3), gatherNeg(mutate(@param0, -, 2, 3), ['-1', '-2', '-5'])]
+# vis_spec:
+    {'mark': 'bar', 'encoding': {'x': {'field': 'label', 'type': 'nominal'}, 'y': {'field': 'VALUE', 'type': 'quantitative'}, 'color': {'field': 'KEY', 'type': 'nominal'}}}
+# time used (s): 53.9710
+
+real	0m55.443s
+user	0m54.800s
+sys	0m0.440s

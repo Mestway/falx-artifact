@@ -1,0 +1,42 @@
+R[write to console]: 
+Attaching package: ‘dplyr’
+
+
+R[write to console]: The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+
+R[write to console]: The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+[info] Parsing spec ...
+[info] Parsing succeeded
+[info] Building synthesizer ...
+[info] Synthesizing programs ...
+[info] # candidates before getting the correct solution: 2
+[info] Solution found: [gatherNeg(@param0, ['-1'])]
+====> run synthesize 007.json
+# num samples per layer: 4
+   index  Strongly Agree  Agree  Disagree  Strongly Disagree
+1    0.0            50.0   35.0       8.0                7.0
+2    1.0            70.0   10.0      10.0               10.0
+3    2.0            45.0   30.0      15.0               10.0
+    c_x  c_y            c_color
+1  50.0  0.0     Strongly Agree
+2  10.0  1.0           Disagree
+3   7.0  0.0  Strongly Disagree
+4  45.0  2.0     Strongly Agree
+# candidates before getting the correct solution: 2
+## synthesize result for task 007.json
+# table_prog:
+  [gatherNeg(@param0, ['-1'])]
+# vis_spec:
+    {'mark': 'bar', 'encoding': {'x': {'field': 'VALUE', 'type': 'quantitative'}, 'y': {'field': 'index', 'type': 'nominal'}, 'color': {'field': 'KEY', 'type': 'nominal'}}}
+# time used (s): 0.8697
+
+real	0m2.340s
+user	0m1.940s
+sys	0m0.320s

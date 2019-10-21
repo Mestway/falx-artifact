@@ -1,0 +1,1409 @@
+R[write to console]: 
+Attaching package: ‘dplyr’
+
+
+R[write to console]: The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+
+R[write to console]: The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+[info] Parsing spec ...
+[info] Parsing succeeded
+[info] Building synthesizer ...
+[info] Synthesizing programs ...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+[info] Solution not found!
+[info] Synthesizing programs ...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+R[write to console]: In addition: 
+R[write to console]: Warning messages:
+
+R[write to console]: 1: NAs introduced by coercion 
+
+R[write to console]: 2: NAs introduced by coercion 
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+R[write to console]: In addition: 
+R[write to console]: Warning messages:
+
+R[write to console]: 1: NAs introduced by coercion 
+
+R[write to console]: 2: NAs introduced by coercion 
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+R[write to console]: In addition: 
+R[write to console]: Warning messages:
+
+R[write to console]: 1: NAs introduced by coercion 
+
+R[write to console]: 2: NAs introduced by coercion 
+
+R[write to console]: 3: NAs introduced by coercion 
+
+R[write to console]: 4: NAs introduced by coercion 
+
+R[write to console]: 5: NAs introduced by coercion 
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+R[write to console]: Error: Each row of output must be identified by a unique combination of keys.
+Keys are shared for 20 rows:
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+* 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+Call `rlang::last_error()` to see a backtrace
+
+[error] Error in interpreting spread...
+[info] Solution not found!
+====> run synthesize 060.json
+# num samples per layer: 4
+       fac   score
+1   trial1  1.0355
+2   trial1  1.4998
+3   trial1  2.1847
+4   trial1  1.0140
+5   trial1  1.8388
+6   trial1  1.3549
+7   trial1  0.9128
+8   trial1  1.6856
+9   trial1  3.0877
+10  trial1  3.2488
+11  trial2  1.7138
+12  trial2  2.6099
+13  trial2  4.3185
+14  trial2  2.8532
+15  trial2  3.2195
+16  trial2  4.4374
+17  trial2  2.1362
+18  trial2  2.5519
+19  trial2  1.2056
+20  trial2  2.6400
+      c_x     c_y
+1  1.7138  1.0355
+2  2.5519  1.6856
+3  2.6400  3.2488
+4  4.4374  1.3549
+## synthesize result for task 060.json
+
+real	0m11.896s
+user	0m10.530s
+sys	0m0.340s

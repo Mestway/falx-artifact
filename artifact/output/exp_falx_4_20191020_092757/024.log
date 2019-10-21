@@ -1,0 +1,47 @@
+R[write to console]: 
+Attaching package: ‘dplyr’
+
+
+R[write to console]: The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+
+R[write to console]: The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+[info] Parsing spec ...
+[info] Parsing succeeded
+[info] Building synthesizer ...
+[info] Synthesizing programs ...
+[info] # candidates before getting the correct solution: 0
+[info] Solution found: [mutate(@param0, +, 3, 2)]
+====> run synthesize 024.json
+# num samples per layer: 4
+            Parts   Start Date  Duration
+1      Foundation  959842800.0  864000.0
+2           Walls  960793200.0  604800.0
+3            Roof  961484400.0  864000.0
+4  Windows, Doors  962434800.0  432000.0
+5        Plumbing  962953200.0  259200.0
+6        Electric  962953200.0  259200.0
+7        Painting  963298800.0  172800.0
+8        Flooring  963471600.0  172800.0
+           c_x         c_x2       c_y
+1  960793200.0  961398000.0     Walls
+2  961484400.0  962348400.0      Roof
+3  962953200.0  963212400.0  Electric
+4  963471600.0  963644400.0  Flooring
+# candidates before getting the correct solution: 0
+## synthesize result for task 024.json
+# table_prog:
+  [mutate(@param0, +, 3, 2)]
+# vis_spec:
+    {'mark': 'bar', 'encoding': {'x': {'field': 'Start Date', 'type': 'quantitative'}, 'x2': {'field': 'mutate_a'}, 'y': {'field': 'Parts', 'type': 'nominal', 'sort': None}}}
+# time used (s): 2.0102
+
+real	0m3.639s
+user	0m3.220s
+sys	0m0.320s
