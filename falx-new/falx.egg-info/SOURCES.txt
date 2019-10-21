@@ -1,4 +1,3 @@
-README.md
 setup.py
 falx.egg-info/PKG-INFO
 falx.egg-info/SOURCES.txt
