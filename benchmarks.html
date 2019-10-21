@@ -150,6 +150,10 @@ trace_type  :=  bar, line, point, area
 </pre></p>
 
         <p>Target visualizations include bar charts, line charts, scatter plots, area charts, stacked bar (area) charts, multi-layered charts, and facted (multi-vew) charts. Target visualizations and visual sketches are rendered using <a href='https://vega.github.io/vega-lite/'>Vega-Lite</a> with the help of <a href="https://github.com/vega/vega-embed">Vega-Embed</a> library. Besides providing rendered visualizations, we also provide visual traces (for both visual sketch and the target visualization) in textual form for reference.</p> 
+
+        <p>Note: Our visual representation of the visual sketch uses axis and labels from the full visualization to make the comparison between the visual sketch and the output visualization easy. In the synthesis task, these label/axis information are unknown to the synthesizer -- the synthesizer only gets information from the textual representation of the visualization (as traces).</p>
+
+        <p>Known issue: the visualization for benchmark 008 cannot be correctly rendered by Vega-Embed due to bug in Vega-Embed library, thus we only present textual representation of the visualizations for this benchmark.</p> 
       </div>
       <div id="benchmark-page">
         <h1 id="benchmark-header"> </h1>

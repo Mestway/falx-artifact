@@ -66,7 +66,7 @@ def plot_solving_time(log_dir):
         for exp_id in cnt:
             plot_data.append({"time": i, "cnt": cnt[exp_id], "exp_id": exp_id })
     
-    print("{}".format(log_dir))
+    print("---")
     for d in plot_data:
         print("  # caes solved within {} second(s): {}".format(d["time"], d["cnt"]))
 
@@ -86,10 +86,10 @@ def plot_num_candidates(log_dir):
         dft = df[df["exp_id"]==t]
         #print("# cases solved within top 5:")
         #print(list(dft[dft["num_explored"] <= 5]["data_id"]))
-        print("  # cases solved solved within top 1: {}".format(len(dft[dft["num_explored"] <= 1])))
-        print("  # cases solved solved within top 3: {}".format(len(dft[dft["num_explored"] <= 3])))
-        print("  # cases solved solved within top 5: {}".format(len(dft[dft["num_explored"] <= 5])))
-        print("  # cases solved within time limit:   {}".format(len(dft)))
+        print("  # cases solved solved within top 1:  {}".format(len(dft[dft["num_explored"] <= 1])))
+        print("  # cases solved solved within top 5:  {}".format(len(dft[dft["num_explored"] <= 3])))
+        print("  # cases solved solved within top 10: {}".format(len(dft[dft["num_explored"] <= 5])))
+        print("  # cases solved within time limit:    {}".format(len(dft)))
 
 if __name__ == '__main__':
 
