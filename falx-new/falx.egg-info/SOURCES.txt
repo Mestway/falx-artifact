@@ -1,5 +1,0 @@
-setup.py
-falx.egg-info/PKG-INFO
-falx.egg-info/SOURCES.txt
-falx.egg-info/dependency_links.txt
-falx.egg-info/top_level.txt
