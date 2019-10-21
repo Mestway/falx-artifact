@@ -46,9 +46,11 @@ pip3 install -r requirements.txt
 pip3 install -e .
 echo "install.packages(\"dplyr\", dependencies=TRUE); install.packages(\"tidyr\", dependencies=TRUE);install.packages(\"jsonlite\", dependencies=TRUE);install.packages(\"compare\", dependencies=TRUE)" | R --save</pre>
 
-      <p><span style="font-weight: bold;text-decoration:underline;">How to start over?</span> In a rare event that your docker building process get broken or you want to destroy your docker container and start over, you can (1) delete the docker container using command <code>docker rm CONTAINER_ID</code>, where <code>CONTAINER_ID</code> of the docker you just built can be looked up with command <code>docker ps -a</code>  (look for the container built from an image named <code>falx-artifact-img</code>) and (2) delete the the docker image (with command <code>docker rmi falx-artifact-img</code>), and then start over from the first step.
-      </p>
-      <p>Make sure you re-run scripts to re-install all dependencies again after you rebuild the docker container.</p>
+      <div style="background: lightyellow; padding: 10px 20px 0px 20px;">
+        <p><span style="font-weight: bold;text-decoration:underline;">How to start over?</span> In a rare event that your docker building process get broken or you want to destroy your docker container and start over, you can (1) delete the docker container using command <code>docker rm falx-artifact</code> and (2) delete the the docker image (with command <code>docker rmi falx-artifact-img</code>), and then start over from the first step using <code>sh ./init_docker.sh</code>.
+        </p>
+        <p style="text-decoration: underline;">Make sure you re-run scripts to re-install all dependencies again after you rebuild the docker container.</p>
+      </div>
 
       <h2>Overview</h2>
 
