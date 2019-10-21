@@ -26,9 +26,9 @@
 
       <ul> 
         <li> <i>Benchmarks</i> of visualization by example tasks. See <a href="#benchmarks">Benchmarks</a> section.</li>
-        <li> <i>Implementation of the synthesis algorithm</i> (named <span style="font-weight:bold;">Falx</span> under the <code>artifact</code> directory) in Python3. This is our implementation used in the paper evaluation.</li>
+        <li> <i>Implementation of the synthesis algorithm</i> (named Falx, stored under the <code>artifact</code> directory) in Python3. This is our implementation used in the paper evaluation.</li>
         <li> <i>Evaluation log and analysis scripts</i> used in our paper evaluation.</li>
-        <li> <i>A new implementation of the synthesis algorithm</i> for playing purpose. See <a href="#extra">Extra: Play with the Tool</a> to learn about this new implementation.</li>
+        <li> <i>A new implementation of the synthesis algorithm</i> for playing purpose (named Falx-new, stored under the <code>falx-new</code> directory). See <a href="#extra">Extra: Play with the Tool</a> to learn about this new implementation.</li>
       </ul>
 
       <h2>Prerequisite</h2>
@@ -46,11 +46,15 @@ pip3 install -r requirements.txt
 pip3 install -e .</pre>
 
       <div style="background: lightyellow; padding: 10px 20px 0px 20px;">
-        <p><span style="font-weight: bold;text-decoration:underline;">How to start over?</span> In an event that your docker building process get broken or you want to destroy your docker container and start over, you can delete the docker container using command <code>docker rm falx-artifact</code>, and then start over from the first step using <code>sh ./init_docker.sh</code>.
+        <p><span style="font-weight: bold;text-decoration:underline;">How to start over?</span> In an event that your docker building process get broken or you want to destroy your docker container and start over, you can delete the docker container using command <code>docker rm falx-artifact</code>, and then start over from the first step using <code>sh ./init_docker.sh</code>. This process won't take too long since you only need to re-install python dependencies.
         </p>
         <p style="text-decoration: underline;">Make sure you re-run scripts to re-install all dependencies again after you rebuild the docker container.</p>
 
-        <p>In a extremely rare event that that you want to destroy the docker image and strat over: use command <code>docker rmi falx-artifact-img</code> and then start again using <code>sh ./init_docker.sh</code>. However, we do not recommend this since re-dowloading the docker image would take quite a while to finish.</p>
+        <pre>cd /falx-popl-snapshot/artifact
+pip3 install -r requirements.txt
+pip3 install -e .</pre>
+
+        <p>In an extremely rare event that that you want to destroy the docker image and strat over: use command <code>docker rmi falx-artifact-img</code> and then start again using <code>sh ./init_docker.sh</code>. However, we do not recommend this since re-dowloading the docker image would take quite a while to finish since it needs to recreate R enviroments.</p>
       </div>
 
       <h2>Overview</h2>
