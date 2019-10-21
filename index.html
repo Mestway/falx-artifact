@@ -60,7 +60,7 @@ echo "install.packages(\"dplyr\", dependencies=TRUE); install.packages(\"tidyr\"
       <h2>Benchmarks</h2>
 
       <p>In our AutoVis benchmarks, each visual sketch comes with an input data. Given the <span style="text-decoration: underline;">input data</span> and the <span style="text-decoration: underline;">visual sketch</span>, the goal is to create a <span style="text-decoration: underline;">visualization of the input data</span> such that all visual traces in the sketch are contained by the output visualization. We have created a separate <a href="benchmarks.html">benchmarks page</a> for navigating our benchmarks. Note that in our evaluation, we use visual traces randomly sampled from the full visual trace as the input (visual sketch) to the synthesizer as discussed in Section 6.2 in the paper. In the benchmark viewer, for each bechmark, we present one visual sketch sampled from the full trace.</p>
- 
+
       <h2>Experiment 1</h2>
 
       <p> The fist set of experiments (Section 6.2) involve running our synthesis algorithm with different sizes of visual sketch to evaluate (1) the number of benchmarks can be sovled at different timeout and (2) the impact of size of visual sketch on the ranking. In the following, we show instructions to produce the result in Table 1 and Table 2 of our paper.
@@ -116,7 +116,7 @@ python plot_script_1.py exp_falx_8_DATETIME3</pre>
       <p>For each execution log, the analysis script will perform the following two analysis tasks.
 
       <ol> 
-        <li>It counts the number of cases such that the correct solution is ranked among top-1, top-3, top-5 of synthesized solutions as well as the total number of benchmarks solved by the synthesizer</li>
+        <li>It counts the number of cases such that the correct solution is ranked among top-1, top-5, top-10 of synthesized solutions as well as the total number of benchmarks solved by the synthesizer</li>
         <li>the numbers of cases that can be solved within 1 / 10 / 60 / 600 seconds by the synthesizer</li>
       </ol> 
 
@@ -125,8 +125,8 @@ python plot_script_1.py exp_falx_8_DATETIME3</pre>
       <pre>
 LOG_DIR
   # cases solved solved within top 1: X1
-  # cases solved solved within top 3: X2
-  # cases solved solved within top 5: X3
+  # cases solved solved within top 5: X2
+  # cases solved solved within top 10: X3
   # cases solved within time limit:   X4
 ---
   # caes solved within 1 second(s): Y1
