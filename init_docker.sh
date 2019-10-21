@@ -10,7 +10,7 @@ if [[ "$(docker images -q $IMG_NAME 2> /dev/null)" == "" ]]; then
 fi
 
 echo "[0] starting container with name $CONTAINER_NAME ..."
-if [ ! "$(docker ps -q -f name=$CONTAINER_NAME)" ]; then
+if [ "$(docker ps -a | grep $CONTAINER_NAME)" ]; then
     echo "docker $CONTAINER_NAME already exist, remove it now"
     docker rm $CONTAINER_NAME
 fi
