@@ -1,5 +1,22 @@
 #!/bin/bash
 
+### experiment configurations
+
+dirname="../benchmarks/"
+prune=$1 #falx | morpheus | none
+num_samples=$2
+time_limit=$3
+
+echo "### configurations:"
+echo "  benchmark_dir: "$dirname 
+echo "  algorithm: "$prune
+echo "  num_samples: "$num_samples 
+echo "  time_limit: "$time_limit
+
+exit 0
+
+### don't edit 
+
 unameOut="$(uname -s)"
 case "${unameOut}" in
     Linux*)     timeout_cmd=timeout;;
@@ -8,12 +25,6 @@ esac
 echo ${timeout_cmd}
 
 dt=$(date '+%Y%m%d_%H%M%S')
-
-dirname="../benchmarks/"
-num_samples=4
-time_limit=600
-###falx | forward | morpheus | none
-prune=falx
 output_dir="../output/exp_"$prune"_"$num_samples"_"$dt
 
 data_list=(

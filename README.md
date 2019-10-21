@@ -1,4 +1,3 @@
 # falx-artifact
-The artifact for Falx visualization synthesizer
 
-Downlaod and click index.html to view benchmarks.
+The artifact for Falx visualization synthesizer. Downlaod and click index.html to view instructions for 
